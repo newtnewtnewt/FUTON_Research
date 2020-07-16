@@ -45,28 +45,29 @@ MIMICzs(:,45)=2.*MIMICzs(:,45);   % increase weight of this variable
 stream = RandStream('mlfg6331_64'); options = statset('UseParallel',1,'UseSubstreams',1,'Streams',stream); warning('off','all')
 % for modl=1:mdp_count  % MAIN LOOP OVER ALL MODELS
    
-  N=numel(icuuniqueids); %total number of rows to choose from
-  grp=floor(crossval_iter*rand(N,1)+1);  %list of 1 to 5 (20% of the data in each grp) -- this means that train/test MIMIC split are DIFFERENT in all the 500 models
-  crossval=1;
-  trainidx=icuuniqueids(crossval~=grp);
-  testidx=icuuniqueids(crossval==grp);
-  train=ismember(icustayidlist,trainidx);
-  test=ismember(icustayidlist,testidx);
-  X=MIMICzs(train,:);
-  Xtestmimic=MIMICzs(~train,:);
-  blocs=patientdata(train,1);
-  bloctestmimic=patientdata(~train,1);
-  ptid=patientdata(train,2);
-  ptidtestmimic=patientdata(~train,2);
-  outcome=10; %   HOSP _ MORTALITY = 8 / 90d MORTA = 10
-  Y90=patientdata(train,outcome);  
+N=numel(icuuniqueids); %total number of rows to choose from
+grp=floor(crossval_iter*rand(N,1)+1);  %list of 1 to 5 (20% of the data in each grp) -- this means that train/test MIMIC split are DIFFERENT in all the 500 models
+crossval=1;
+trainidx=icuuniqueids(crossval~=grp);
+testidx=icuuniqueids(crossval==grp);
+train=ismember(icustayidlist,trainidx);
+test=ismember(icustayidlist,testidx);
+X=MIMICzs(train,:);
+Xtestmimic=MIMICzs(~train,:);
+blocs=patientdata(train,1);
+bloctestmimic=patientdata(~train,1);
+ptid=patientdata(train,2);
+ptidtestmimic=patientdata(~train,2);
+outcome=10; %   HOSP _ MORTALITY = 8 / 90d MORTA = 10
+Y90=patientdata(train,outcome);  
 %fprintf('########################   MODEL NUMBER : ');       fprintf('%d \n',modl);         disp( datestr(now))
 N=size(X,1); %total number of rows to choose from
 sampl=X(find(floor(rand(N,1)+cluster_sample)),:);
 [~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
-'Start','plus','Display','final','Replicates',clustering_iter)
+'Start','plus','Display','final','Replicates',clustering_iter);
 [idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
-
+disp(size(C))
+disp(size(X))
 
 
 
