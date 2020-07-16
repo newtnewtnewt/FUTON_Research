@@ -65,23 +65,8 @@ N=size(X,1); %total number of rows to choose from
 sampl=X(find(floor(rand(N,1)+cluster_sample)),:);
 [~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
 'Start','plus','Display','final','Replicates',clustering_iter)
-% [idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
+[idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
 
-% colbin = {'gender','mechvent','max_dose_vaso','re_admission'};
-% colnorm={'age','Weight_kg','GCS','HR','SysBP','MeanBP','DiaBP','RR','Temp_C','FiO2_1',...
-%     'Potassium','Sodium','Chloride','Glucose','Magnesium','Calcium',...
-%     'Hb','WBC_count','Platelets_count','PTT','PT','Arterial_pH','paO2','paCO2',...
-%     'Arterial_BE','HCO3','Arterial_lactate','SOFA','SIRS','Shock_Index','PaO2_FiO2','cumulated_balance'};
-% collog={'SpO2','BUN','Creatinine','SGOT','SGPT','Total_bili','INR','input_total','input_4hourly','output_total','output_4hourly'};
-% 
-% colbin=find(ismember(MIMICtable.Properties.VariableNames,colbin));colnorm=find(ismember(MIMICtable.Properties.VariableNames,colnorm));collog=find(ismember(MIMICtable.Properties.VariableNames,collog));
-% 
-% patientdata=table2array(MIMICtable);
-% MIMICraw=MIMICtable(:, [colbin colnorm collog]);
-% MIMICraw=table2array(MIMICraw);  % RAW values
-% MIMICzs=[patientdata(:, colbin)-0.5 zscore(patientdata(:,colnorm)) zscore(log(0.1+patientdata(:, collog)))];
-% 
-% MIMICzs(:,[4])=log(MIMICzs(:,[ 4])+.6);   % MAX DOSE NORAD 
-% MIMICzs(:,45)=2.*MIMICzs(:,45);   % increase weight of this variable
+
 
 
