@@ -53,8 +53,20 @@ vcl=find(ismember(MIMICtable.Properties.VariableNames,{'max_dose_vaso'}));
 a= patientdata(:,iol);                   %IV fluid
 a= tiedrank(a(a>0)) / length(a(a>0));   % excludes zero fluid (will be action 1)
 
-disp(a);
- 
+        iof=floor((a+0.2499999999)*4);  %converts iv volume in 4 actions
+        a= patientdata(:,iol); a=find(a>0);  %location of non-zero fluid in big matrix
+        io=ones(size(patientdata,1),1);  %array of ones, by default     
+        io(a)=iof+1;   %where more than zero fluid given: save actual action
+        vc=patientdata(:,vcl);  vcr= tiedrank(vc(vc~=0)) / numel(vc(vc~=0)); vcr=floor((vcr+0.249999999999)*4);  %converts to 4 bins
+        vcr(vcr==0)=1; vc(vc~=0)=vcr+1; vc(vc==0)=1;
+        ma1=[ median(patientdata(io==1,iol))  median(patientdata(io==2,iol))  median(patientdata(io==3,iol))  median(patientdata(io==4,iol))  median(patientdata(io==5,iol))];  %median dose of drug in all bins
+        ma2=[ median(patientdata(vc==1,vcl))  median(patientdata(vc==2,vcl))  median(patientdata(vc==3,vcl))  median(patientdata(vc==4,vcl))  median(patientdata(vc==5,vcl))] ;
+  
+med=[io vc];
+disp(unique(array2table(med),'rows'));
+% [uniqueValues,~,actionbloc] = unique(array2table(med),'rows');
+% actionbloctrain=actionbloc(train);
+% uniqueValuesdose=[ ma2(uniqueValues.med2)' ma1(uniqueValues.med1)'];  % median dose of each bin for all 25 actions 
 % for modl=1:mdp_count  % MAIN LOOP OVER ALL MODELS
    
 % N=numel(icuuniqueids); %total number of rows to choose from
