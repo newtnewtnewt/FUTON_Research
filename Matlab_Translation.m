@@ -63,10 +63,10 @@ a= tiedrank(a(a>0)) / length(a(a>0));   % excludes zero fluid (will be action 1)
         ma2=[ median(patientdata(vc==1,vcl))  median(patientdata(vc==2,vcl))  median(patientdata(vc==3,vcl))  median(patientdata(vc==4,vcl))  median(patientdata(vc==5,vcl))] ;
   
 med=[io vc];
-disp(unique(array2table(med),'rows'));
-% [uniqueValues,~,actionbloc] = unique(array2table(med),'rows');
-% actionbloctrain=actionbloc(train);
-% uniqueValuesdose=[ ma2(uniqueValues.med2)' ma1(uniqueValues.med1)'];  % median dose of each bin for all 25 actions 
+[uniqueValues,~,actionbloc] = unique(array2table(med),'rows');
+%actionbloctrain=actionbloc(train);
+uniqueValuesdose=[ ma2(uniqueValues.med2)' ma1(uniqueValues.med1)'];  % median dose of each bin for all 25 actions 
+disp(uniqueValuesdose);
 % for modl=1:mdp_count  % MAIN LOOP OVER ALL MODELS
    
 % N=numel(icuuniqueids); %total number of rows to choose from
