@@ -41,7 +41,6 @@ MIMICraw=table2array(MIMICraw);  % RAW values
 MIMICzs=[patientdata(:, colbin)-0.5 zscore(patientdata(:,colnorm)) zscore(log(0.1+patientdata(:, collog)))];  
 MIMICzs(:,[4])=log(MIMICzs(:,[ 4])+.6);   % MAX DOSE NORAD 
 MIMICzs(:,45)=2.*MIMICzs(:,45);   % increase weight of this variable
-
 stream = RandStream('mlfg6331_64'); options = statset('UseParallel',1,'UseSubstreams',1,'Streams',stream); warning('off','all')
 
 disp('####  CREATE ACTIONS  ####') 
@@ -49,7 +48,30 @@ nact=action_count^2;
  
 iol=find(ismember(MIMICtable.Properties.VariableNames,{'input_4hourly'}));
 vcl=find(ismember(MIMICtable.Properties.VariableNames,{'max_dose_vaso'}));
- 
+N=numel(icuuniqueids); %total number of rows to choose from
+grp=floor(crossval_iter*rand(N,1)+1);  %list of 1 to 5 (20% of the data in each grp) -- this means that train/test MIMIC split are DIFFERENT in all the 500 models
+crossval=1;
+trainidx=icuuniqueids(crossval~=grp);
+testidx=icuuniqueids(crossval==grp);
+train=ismember(icustayidlist,trainidx);
+test=ismember(icustayidlist,testidx);
+X=MIMICzs(train,:);
+Xtestmimic=MIMICzs(~train,:);
+blocs=patientdata(train,1);
+bloctestmimic=patientdata(~train,1);
+ptid=patientdata(train,2);
+ptidtestmimic=patientdata(~train,2);
+outcome=10; %   HOSP _ MORTALITY = 8 / 90d MORTA = 10
+Y90=patientdata(train,outcome);  
+N=size(X,1); %total number of rows to choose from
+sampl=X(find(floor(rand(N,1)+cluster_sample)),:);
+disp(size(sampl));
+[~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
+'Start','plus','Display','final','Replicates',clustering_iter);
+[idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
+disp(size(C))
+disp(size(X))
+
 a= patientdata(:,iol);                   %IV fluid
 a= tiedrank(a(a>0)) / length(a(a>0));   % excludes zero fluid (will be action 1)
 
@@ -64,9 +86,12 @@ a= tiedrank(a(a>0)) / length(a(a>0));   % excludes zero fluid (will be action 1)
   
 med=[io vc];
 [uniqueValues,~,actionbloc] = unique(array2table(med),'rows');
-%actionbloctrain=actionbloc(train);
+actionbloctrain=actionbloc(train);
 uniqueValuesdose=[ ma2(uniqueValues.med2)' ma1(uniqueValues.med1)'];  % median dose of each bin for all 25 actions 
-disp(uniqueValuesdose);
+r=[100 -100]; 
+r2=r.*(2*(1-Y90)-1); 
+qldata=[blocs idx actionbloctrain Y90 r2];
+disp(qldata);
 % for modl=1:mdp_count  % MAIN LOOP OVER ALL MODELS
    
 % N=numel(icuuniqueids); %total number of rows to choose from
