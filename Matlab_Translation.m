@@ -66,11 +66,11 @@ Y90=patientdata(train,outcome);
 N=size(X,1); %total number of rows to choose from
 sampl=X(find(floor(rand(N,1)+cluster_sample)),:);
 disp(size(sampl));
-[~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
-'Start','plus','Display','final','Replicates',clustering_iter);
-[idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
-disp(size(C))
-disp(size(X))
+%[~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
+%'Start','plus','Display','final','Replicates',clustering_iter);
+%[idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
+%disp(size(C))
+%disp(size(X))
 
 a= patientdata(:,iol);                   %IV fluid
 a= tiedrank(a(a>0)) / length(a(a>0));   % excludes zero fluid (will be action 1)
@@ -90,8 +90,8 @@ actionbloctrain=actionbloc(train);
 uniqueValuesdose=[ ma2(uniqueValues.med2)' ma1(uniqueValues.med1)'];  % median dose of each bin for all 25 actions 
 r=[100 -100]; 
 r2=r.*(2*(1-Y90)-1); 
-qldata=[blocs idx actionbloctrain Y90 r2];
-disp(qldata);
+%qldata=[blocs idx actionbloctrain Y90 r2];
+%disp(qldata);
 % for modl=1:mdp_count  % MAIN LOOP OVER ALL MODELS
    
 % N=numel(icuuniqueids); %total number of rows to choose from
@@ -117,6 +117,13 @@ disp(qldata);
 % [idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
 % disp(size(C))
 % disp(size(X))
+transitionr=zeros(state_count+2,state_count+2,nact);  %this is T(S',S,A)
+sums0a0=zeros(state_count+2,nact);
+
+disp(size(transitionr));
+disp(transitionr(1, 1, :));
+
+ 
 
 
 
