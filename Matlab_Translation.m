@@ -127,7 +127,40 @@ abss=[state_count+2 state_count+1]; %absorbing states numbers
 % [idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
 % disp(size(C))
 % disp(size(X))
+
+disp('####  CREATE TRANSITION MATRIX T(S'',S,A) ####')
+ 
+transitionr=zeros(state_count+2,state_count+2,nact);  %this is T(S',S,A)
+sums0a0=zeros(state_count+2,nact);
+ 
+     for i=1:size(qldata3,1)-1
+ 
+         if (qldata3(i+1,1))~=1  % if we are not in the last state for this patient = if there is a transition to make!
+         S0=qldata3(i,2); S1=qldata3(i+1,2);  acid= qldata3(i,3);
+         transitionr(S1,S0,acid)=transitionr(S1,S0,acid)+1;  sums0a0(S0,acid)=sums0a0(S0,acid)+1;
+         end
+     end
+ 
+      sums0a0(sums0a0<=transition_threshold)=0;  %delete rare transitions (those seen less than 5 times = bottom 50%!!)
+
+     for i=1:state_count+2
+         for j=1:nact
+             if sums0a0(i,j)==0
+                transitionr(:,i,j)=0; 
+             else
+                transitionr(:,i,j)=transitionr(:,i,j)/sums0a0(i,j);
+             end
+         end
+     end
+ 
+   
+transitionr(isnan(transitionr))=0;  %replace NANs with zeros
+transitionr(isinf(transitionr))=0;  %replace NANs with zeros
+ 
+physpol=sums0a0./sum(sums0a0')';    %physicians policy: what action was chosen in each state
  disp('####  CREATE TRANSITION MATRIX T(S,S'',A)  ####')
+ 
+
  
 transitionr2=zeros(state_count+2,state_count+2,nact);  % this is T(S,S',A)
 sums0a0=zeros(state_count+2,nact);
@@ -151,10 +184,9 @@ sums0a0=zeros(state_count+2,nact);
              end
          end
      end
- 
-transitionr2(isnan(transitionr2))=0;  %replace NANs with zeros
-transitionr2(isinf(transitionr2))=0;  %replace infs with zeros
-writematrix(transitionr2,'transition_mat.txt');
+save('transitionr');
+save('transitionr2');
+
 
 
  

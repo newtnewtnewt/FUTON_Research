@@ -66,11 +66,10 @@ Y90=patientdata(train,outcome);
 N=size(X,1); %total number of rows to choose from
 sampl=X(find(floor(rand(N,1)+cluster_sample)),:);
 disp(size(sampl));
-%[~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
-%'Start','plus','Display','final','Replicates',clustering_iter);
-%[idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
-%disp(size(C))
-%disp(size(X))
+[~,C] = kmeans(sampl,state_count,'Options',options,'MaxIter',10000,...
+'Start','plus','Display','final','Replicates',clustering_iter);
+[idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
+
 
 a= patientdata(:,iol);                   %IV fluid
 a= tiedrank(a(a>0)) / length(a(a>0));   % excludes zero fluid (will be action 1)
@@ -90,7 +89,18 @@ actionbloctrain=actionbloc(train);
 uniqueValuesdose=[ ma2(uniqueValues.med2)' ma1(uniqueValues.med1)'];  % median dose of each bin for all 25 actions 
 r=[100 -100]; 
 r2=r.*(2*(1-Y90)-1); 
-%qldata=[blocs idx actionbloctrain Y90 r2];
+qldata=[blocs idx actionbloctrain Y90 r2];
+qldata3=zeros(floor(size(qldata,1)*1.2),4); 
+c=0;
+abss=[state_count+2 state_count+1]; %absorbing states numbers
+ 
+        for i=1:size(qldata,1)-1
+            c=c+1;  qldata3(c,:)=qldata(i,1:4);
+            if qldata(i+1,1)==1 %end of trace for this patient
+                c=c+1;     qldata3(c,:)=[qldata(i,1)+1 abss(1+qldata(i,4)) 0 qldata(i,5)]; 
+            end
+        end
+        qldata3(c+1:end,:)=[];
 %disp(qldata);
 % for modl=1:mdp_count  % MAIN LOOP OVER ALL MODELS
    
@@ -117,11 +127,67 @@ r2=r.*(2*(1-Y90)-1);
 % [idx]=knnsearch(C,X);  %N-D nearest point search: look for points closest to each centroid
 % disp(size(C))
 % disp(size(X))
+
+disp('####  CREATE TRANSITION MATRIX T(S'',S,A) ####')
+ 
 transitionr=zeros(state_count+2,state_count+2,nact);  %this is T(S',S,A)
 sums0a0=zeros(state_count+2,nact);
+ 
+     for i=1:size(qldata3,1)-1
+ 
+         if (qldata3(i+1,1))~=1  % if we are not in the last state for this patient = if there is a transition to make!
+         S0=qldata3(i,2); S1=qldata3(i+1,2);  acid= qldata3(i,3);
+         transitionr(S1,S0,acid)=transitionr(S1,S0,acid)+1;  sums0a0(S0,acid)=sums0a0(S0,acid)+1;
+         end
+     end
+ 
+      sums0a0(sums0a0<=transition_threshold)=0;  %delete rare transitions (those seen less than 5 times = bottom 50%!!)
 
-disp(size(transitionr));
-disp(transitionr(1, 1, :));
+     for i=1:state_count+2
+         for j=1:nact
+             if sums0a0(i,j)==0
+                transitionr(:,i,j)=0; 
+             else
+                transitionr(:,i,j)=transitionr(:,i,j)/sums0a0(i,j);
+             end
+         end
+     end
+ 
+   
+transitionr(isnan(transitionr))=0;  %replace NANs with zeros
+transitionr(isinf(transitionr))=0;  %replace NANs with zeros
+ 
+physpol=sums0a0./sum(sums0a0')';    %physicians policy: what action was chosen in each state
+ disp('####  CREATE TRANSITION MATRIX T(S,S'',A)  ####')
+ 
+
+ 
+transitionr2=zeros(state_count+2,state_count+2,nact);  % this is T(S,S',A)
+sums0a0=zeros(state_count+2,nact);
+ 
+     for i=1:size(qldata3,1)-1
+ 
+         if (qldata3(i+1,1))~=1  % if we are not in the last state for this patient = if there is a transition to make!
+         S0=qldata3(i,2); S1=qldata3(i+1,2);  acid= qldata3(i,3);
+         transitionr2(S0,S1,acid)=transitionr2(S0,S1,acid)+1;  sums0a0(S0,acid)=sums0a0(S0,acid)+1;
+         end
+     end
+ 
+      sums0a0(sums0a0<=transition_threshold)=0;  %delete rare transitions (those seen less than 5 times = bottom 50%!!) IQR = 2-17
+     
+     for i=1:state_count+2
+         for j=1:nact
+             if sums0a0(i,j)==0
+                transitionr2(i,:,j)=0; 
+             else
+                transitionr2(i,:,j)=transitionr2(i,:,j)/sums0a0(i,j);
+             end
+         end
+     end
+save('transitionr');
+save('transitionr2');
+
+
 
  
 

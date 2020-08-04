@@ -1,0 +1,17 @@
+% transitionr2 = readmatrix('transition_mat.txt');
+% disp(size(transitionr2));
+mat_file_1 = fopen('transition_mat.txt');
+mat_file_2 = fopen('transition_mat2.txt');
+
+transition_mat1 = zeros(752, 752, 25);
+for i = 1:752
+    for j = 1:752
+        for k = 1:25
+            indices = split(fgetl(mat_file_1));
+            i = indices[2];
+            j = indices[3];
+            k = indices[4];
+        % transition_mat1(i, j, k) = 
+        end
+    end
+end
