@@ -186,6 +186,10 @@ sums0a0=zeros(state_count+2,nact);
      end
 save('transitionr');
 save('transitionr2');
+save('qldata');
+save('qldata3');
+
+
 
 
 

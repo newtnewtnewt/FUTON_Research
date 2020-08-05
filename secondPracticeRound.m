@@ -1,2 +1,4 @@
-disp(transitionr(state_count + 1, :, :));
+load('transitionr');
+load('qldata3');
+disp(qldata3(1));
 
