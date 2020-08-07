@@ -1,17 +1,35 @@
-% transitionr2 = readmatrix('transition_mat.txt');
-% disp(size(transitionr2));
-mat_file_1 = fopen('transition_mat.txt');
-mat_file_2 = fopen('transition_mat2.txt');
+load('transitionr');
+load('qldata3');
+load('transitionr2');
+r3=zeros(state_count+2,state_count+2,nact); 
+r3(state_count+1,:,:)=-100; 
+r3(state_count+2,:,:)=100;
+R=sum(transitionr.*r3);
+R=squeeze(R);   %remove 1 unused dimension
+life_total = 0;
+death_total = 0;
 
-transition_mat1 = zeros(752, 752, 25);
-for i = 1:752
-    for j = 1:752
-        for k = 1:25
-            indices = split(fgetl(mat_file_1));
-            i = indices[2];
-            j = indices[3];
-            k = indices[4];
-        % transition_mat1(i, j, k) = 
+total_life_actions = zeros(752, 25);
+total_death_actions = zeros(752, 25);
+
+for i = 1:size(transitionr2, 1)
+        for j = 1:25
+            if transitionr2(i, 751, j) ~= 0
+                total_life_actions = total_life_actions + 1
+            end
+            if transitionr2(i, 752, j) ~= 0
+                total_death_actions = total_death_actions(i,m  + 1
+            end
         end
-    end
 end
+disp(life_total);
+disp(death_total);
+% for i = 1:size(R, 1)
+%     for j = 1:25
+%         if R(i, j) ~= 0
+%             count_total = count_total + 1;
+%         end
+%     end
+% end
+%disp(count_total);
+% disp(size(R));
