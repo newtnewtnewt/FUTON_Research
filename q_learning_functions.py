@@ -8,6 +8,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import shelve
+import typing
+from typing import *
 # Import the MDP toolbox that contains a method for conducting Q-Learning
 # Tool can be found here: https://github.com/sawcordwell/pymdptoolbox
 # Documentation for the tool can be found here 
@@ -17,7 +19,23 @@ import mdptoolbox
 # A function to actually perform Q learning
 # REPLACE WITH ACTUAL INFORMATION
 ### 
-def offpolicy_Q_learning(ql_train_set, gamma, alpha, numtraces):
+def offpolicy_Q_learning(ql_train_set: pd.DataFrame, gamma: float, alpha: float, numtraces: int) -> List[List[int]]:
+    # We need to save the Q-value for each run 
+    sum_Q_values = np.zeros(numtraces)
+    # We need to construct the full matrix based on actions and states
+    num_actions = len(ql_train_set['chosen_action_index'].unique()) - 1
+    num_clusters = len(ql_train_set['closest_cluster_index'].unique())
+    # Where the Q-Values are saved at each given run
+    # print("Solider boy", num_clusters, num_actions)
+    # q_values = np.zeros((num_clusters, num_actions))
+    # A perfect Q-value for a given action is the max that can be obtained
+    max_avg_Q = 1
+    # Modulus for use in processing later
+    modulus_val = 100
+    # List of the rows that contain the first instance of a patient's data per patient
+    first_index_list = ql_train_set[ql_train_set['training_bloc'] == 1].index
+    print(first_index_list)
+    
     result_matrix = np.zeros((25, 750))
     return result_matrix
 
@@ -32,8 +50,7 @@ def offpolicy_Q_learning(ql_train_set, gamma, alpha, numtraces):
 # physician_policy: A 25 x 750 matrix of the actions a phyiscian chosen given a state (physician_policy[A][S])
 # distribution_values: A 750 long array that stores frequency of state appears
 ###
-def parallel_bootql_creation(unique_training_set_ids, proportion, gamma, 
-                             qlearning_train_dataset_final, physician_policy, distribution_values):
+def parallel_bootql_creation(unique_training_set_ids: pd.DataFrame, proportion: float, gamma: float, qlearning_train_dataset_final: pd.DataFrame, physician_policy: List[List[int]], distribution_values: List[int]) -> List[List[int]]:
     # Grab a random sample of the ids to use for the Q-LEARNING step
     train_len = len(unique_training_set_ids)
     # We are going to randomly mark around (proportion) number of IDs
