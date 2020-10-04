@@ -62,5 +62,5 @@ end
 qldata3train=qldata3;
 
 tic
- [ bootql,bootwis ] = offpolicy_multiple_eval_010518( qldata3,physpol, 0.99,1,6,750);
+ [ bootql,bootwis ] = offpolicy_multiple_eval_010518( qldata3,physpol, 0.99,0,6,750);
 toc
