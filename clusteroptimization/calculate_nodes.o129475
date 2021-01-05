@@ -1,0 +1,23 @@
+Please execute: source /software/python/anaconda3/etc/profile.d/conda.sh
+pid 136477's current affinity mask: ffffff
+pid 136477's new affinity mask: fffff
+compute_nodes.py:96: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  sample_train_set:pd.DataFrame = train_zscores[train_flag]
+Process Process-24:
+Traceback (most recent call last):
+  File "/software/python/anaconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/software/python/anaconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "compute_nodes.py", line 88, in calculate_optimal_clusters_parallel
+    variance_results[state_count] = total_variance
+IndexError: index 750 is out of bounds for axis 0 with size 750
+Process Process-25:
+Traceback (most recent call last):
+  File "/software/python/anaconda3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/software/python/anaconda3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "compute_nodes.py", line 74, in calculate_optimal_clusters_parallel
+    thread_needed_runs:List[int] = np.array_split(total_needed_runs, 24)[num]
+IndexError: list index out of range

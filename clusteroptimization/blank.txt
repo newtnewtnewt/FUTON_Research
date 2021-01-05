@@ -1,0 +1,1285 @@
+top - 14:07:09 up 206 days,  4:35, 19 users,  load average: 9.93, 10.95, 11.39
+Tasks: 1278 total,   5 running, 1272 sleeping,   0 stopped,   1 zombie
+%Cpu(s): 29.8 us, 14.7 sy,  0.0 ni, 51.5 id,  4.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 39456400+total, 10969974+free, 34925868 used, 24993840+buff/cache
+KiB Swap: 33554428 total, 32846192 free,   708236 used. 35313244+avail Mem 
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+ 56012 root      20   0 3897252 114716  33536 S 242.9  0.0  37804:11 metricbeat
+  1077 rlm       20   0   93040   1788   1292 S 100.0  0.0 288973:17 rlm
+  8500 weiq9     20   0 6067048   1.2g  68864 R  95.2  0.3 245158:26 gnome-shell
+ 47579 muellej   20   0 1118076 395572  20016 S  95.2  0.1   2387:37 tracker-store
+ 90224 muellej   20   0 2680564   1.6g   8748 S  95.2  0.4 152481:31 tracker-store
+171859 farleik   20   0 6127476   1.2g  90536 R  95.2  0.3 218737:40 gnome-shell
+197541 strasbm3  20   0 6025908 825104  74240 R  95.2  0.2 129572:09 gnome-shell
+252968 filiatan  20   0 5663468 492808  75732 R  90.5  0.1  62063:14 gnome-shell
+   961 dunnnm2   20   0  173500   3388   1584 R  28.6  0.0   0:00.08 top
+  1150 dbus      20   0  127036  55740   1928 S  28.6  0.0   4130:38 dbus-daemon
+     1 root      20   0  204840   9144   4008 S  23.8  0.0   2628:54 systemd
+    81 root      20   0       0      0      0 S   4.8  0.0   3:26.71 ksoftirqd/14
+ 45959 muellej    0 -20 3632520 400692 113968 S   4.8  0.1  59:05.47 nxnode.bin
+ 47121 muellej   20   0 5792520 321328  91356 S   4.8  0.1  68:29.69 gnome-shell
+101500 root      20   0 4934088   1.2g  12028 S   4.8  0.3 842:23.57 moab
+150783 fitzgev   20   0 3499628 435352  80344 S   4.8  0.1   7:18.74 Web Content
+179411 sabbirm   20   0 1523568   6556   4636 S   4.8  0.0   2:27.48 pulseaudio
+205159 kassah     0 -20 1585252   9928   1164 S   4.8  0.0   0:33.87 nxfs
+     2 root      20   0       0      0      0 S   0.0  0.0   4:59.15 kthreadd
+     6 root      20   0       0      0      0 S   0.0  0.0  12:43.16 ksoftirqd/0
+     7 root      rt   0       0      0      0 S   0.0  0.0   1:01.80 migration/0
+     8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+     9 root      20   0       0      0      0 S   0.0  0.0   1634:54 rcu_sched
+    10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain
+    11 root      rt   0       0      0      0 S   0.0  0.0   0:50.87 watchdog/0
+    12 root      rt   0       0      0      0 S   0.0  0.0   0:55.58 watchdog/1
+    13 root      rt   0       0      0      0 S   0.0  0.0   1:55.26 migration/1
+    14 root      20   0       0      0      0 S   0.0  0.0  11:55.27 ksoftirqd/1
+    18 root      rt   0       0      0      0 S   0.0  0.0   1:23.39 watchdog/2
+    19 root      rt   0       0      0      0 S   0.0  0.0   1:42.28 migration/2
+    20 root      20   0       0      0      0 S   0.0  0.0   9:57.54 ksoftirqd/2
+    23 root      rt   0       0      0      0 S   0.0  0.0   0:49.40 watchdog/3
+    24 root      rt   0       0      0      0 S   0.0  0.0   1:27.94 migration/3
+    25 root      20   0       0      0      0 S   0.0  0.0   8:17.58 ksoftirqd/3
+    28 root      rt   0       0      0      0 S   0.0  0.0   0:49.30 watchdog/4
+    29 root      rt   0       0      0      0 S   0.0  0.0   1:22.06 migration/4
+    30 root      20   0       0      0      0 S   0.0  0.0   7:33.05 ksoftirqd/4
+    33 root      rt   0       0      0      0 S   0.0  0.0   0:50.59 watchdog/5
+    34 root      rt   0       0      0      0 S   0.0  0.0   1:18.78 migration/5
+    35 root      20   0       0      0      0 S   0.0  0.0   7:07.54 ksoftirqd/5
+    38 root      rt   0       0      0      0 S   0.0  0.0   0:49.68 watchdog/6
+    39 root      rt   0       0      0      0 S   0.0  0.0   1:15.54 migration/6
+    40 root      20   0       0      0      0 S   0.0  0.0   6:58.47 ksoftirqd/6
+    43 root      rt   0       0      0      0 S   0.0  0.0   0:49.86 watchdog/7
+    44 root      rt   0       0      0      0 S   0.0  0.0   1:12.93 migration/7
+    45 root      20   0       0      0      0 S   0.0  0.0   6:57.52 ksoftirqd/7
+    48 root      rt   0       0      0      0 S   0.0  0.0   0:49.75 watchdog/8
+    49 root      rt   0       0      0      0 S   0.0  0.0   1:09.78 migration/8
+    50 root      20   0       0      0      0 S   0.0  0.0   6:51.38 ksoftirqd/8
+    53 root      rt   0       0      0      0 S   0.0  0.0   0:57.08 watchdog/9
+    54 root      rt   0       0      0      0 S   0.0  0.0   1:08.54 migration/9
+    55 root      20   0       0      0      0 S   0.0  0.0   7:04.77 ksoftirqd/9
+    58 root      rt   0       0      0      0 S   0.0  0.0   0:50.80 watchdog/10
+    59 root      rt   0       0      0      0 S   0.0  0.0   1:06.29 migration/10
+    60 root      20   0       0      0      0 S   0.0  0.0   7:15.89 ksoftirqd/10
+    63 root      rt   0       0      0      0 S   0.0  0.0   0:51.05 watchdog/11
+    64 root      rt   0       0      0      0 S   0.0  0.0   1:05.39 migration/11
+    65 root      20   0       0      0      0 S   0.0  0.0   7:27.52 ksoftirqd/11
+    68 root      rt   0       0      0      0 S   0.0  0.0   0:45.38 watchdog/12
+    69 root      rt   0       0      0      0 S   0.0  0.0   0:57.94 migration/12
+    70 root      20   0       0      0      0 S   0.0  0.0   1:08.96 ksoftirqd/12
+    74 root      rt   0       0      0      0 S   0.0  0.0   0:47.00 watchdog/13
+    75 root      rt   0       0      0      0 S   0.0  0.0   1:58.14 migration/13
+    76 root      20   0       0      0      0 S   0.0  0.0   2:17.47 ksoftirqd/13
+    79 root      rt   0       0      0      0 S   0.0  0.0   0:48.94 watchdog/14
+    80 root      rt   0       0      0      0 S   0.0  0.0   1:52.58 migration/14
+    84 root      rt   0       0      0      0 S   0.0  0.0   0:50.03 watchdog/15
+    85 root      rt   0       0      0      0 S   0.0  0.0   1:40.29 migration/15
+    86 root      20   0       0      0      0 S   0.0  0.0   2:50.10 ksoftirqd/15
+    88 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/15:0H
+    89 root      rt   0       0      0      0 S   0.0  0.0   0:49.18 watchdog/16
+    90 root      rt   0       0      0      0 S   0.0  0.0   1:29.30 migration/16
+    91 root      20   0       0      0      0 S   0.0  0.0   2:28.04 ksoftirqd/16
+    94 root      rt   0       0      0      0 S   0.0  0.0   0:49.62 watchdog/17
+    95 root      rt   0       0      0      0 S   0.0  0.0   1:24.43 migration/17
+    96 root      20   0       0      0      0 S   0.0  0.0   1:56.13 ksoftirqd/17
+    98 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/17:0H
+    99 root      rt   0       0      0      0 S   0.0  0.0   0:50.38 watchdog/18
+   100 root      rt   0       0      0      0 S   0.0  0.0   1:18.52 migration/18
+   101 root      20   0       0      0      0 S   0.0  0.0   1:38.29 ksoftirqd/18
+   104 root      rt   0       0      0      0 S   0.0  0.0   0:48.45 watchdog/19
+   105 root      rt   0       0      0      0 S   0.0  0.0   1:13.27 migration/19
+   106 root      20   0       0      0      0 S   0.0  0.0   2:08.85 ksoftirqd/19
+   109 root      rt   0       0      0      0 S   0.0  0.0   0:52.67 watchdog/20
+   110 root      rt   0       0      0      0 S   0.0  0.0   1:09.46 migration/20
+   111 root      20   0       0      0      0 S   0.0  0.0   1:34.43 ksoftirqd/20
+   114 root      rt   0       0      0      0 S   0.0  0.0   0:49.42 watchdog/21
+   115 root      rt   0       0      0      0 S   0.0  0.0   1:05.73 migration/21
+   116 root      20   0       0      0      0 S   0.0  0.0   1:27.27 ksoftirqd/21
+   119 root      rt   0       0      0      0 S   0.0  0.0   0:50.37 watchdog/22
+   120 root      rt   0       0      0      0 S   0.0  0.0   1:03.65 migration/22
+   121 root      20   0       0      0      0 S   0.0  0.0   1:17.89 ksoftirqd/22
+   124 root      rt   0       0      0      0 S   0.0  0.0   0:49.06 watchdog/23
+   125 root      rt   0       0      0      0 S   0.0  0.0   1:01.76 migration/23
+   126 root      20   0       0      0      0 S   0.0  0.0   1:15.76 ksoftirqd/23
+   128 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/23:0H
+   131 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kdevtmpfs
+   132 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 netns
+   133 root      20   0       0      0      0 S   0.0  0.0   3:58.12 khungtaskd
+   134 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 writeback
+   135 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kintegrityd
+   136 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   137 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   138 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   139 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kblockd
+   141 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 md
+   142 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 edac-poller
+   143 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 watchdogd
+   149 root      20   0       0      0      0 S   0.0  0.0 147:56.65 kswapd0
+   150 root      20   0       0      0      0 S   0.0  0.0  40:09.60 kswapd1
+   151 root      25   5       0      0      0 S   0.0  0.0   0:00.00 ksmd
+   152 root      39  19       0      0      0 S   0.0  0.0   1:59.94 khugepaged
+   153 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 crypto
+   161 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kthrotld
+   164 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kmpath_rdacd
+   165 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kaluad
+   189 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kpsmoused
+   191 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 ipv6_addrconf
+   205 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 deferwq
+   244 root      20   0       0      0      0 S   0.0  0.0   6:03.16 kauditd
+   444 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 nfit
+   471 root      20   0       0      0      0 S   0.0  0.0   0:00.00 scsi_eh_0
+   473 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 scsi_tmf_0
+   474 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 ixgbe
+   475 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 i40e
+   476 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 ttm_swap
+   490 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 poll_megasas0_s
+   559 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   560 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   571 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   572 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   585 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   586 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfsalloc
+   587 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs_mru_cache
+   588 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/dm-0
+   589 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/dm-0
+   590 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/dm-0
+   591 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-cil/dm-0
+   592 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/dm-
+   593 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/dm-0
+   594 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/d
+   595 root      20   0       0      0      0 S   0.0  0.0  76:55.25 xfsaild/dm-0
+   607 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/15:0
+   609 root      20   0       0      0      0 S   0.0  0.0   0:00.03 kworker/u496:1
+   614 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/16:1
+   618 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/3:0
+   624 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/10:2
+   627 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/5:1
+   638 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/4:2
+   656 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/u498:1
+   673 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/13:0
+   678 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/1:1
+   681 root      20   0  279612 145228 133968 S   0.0  0.0   6472:17 systemd-journal
+   699 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/19:0
+   706 root      20   0  201112   2460   2368 S   0.0  0.0   0:00.07 lvmetad
+   725 root      20   0   48420   3104   2764 S   0.0  0.0   2:41.30 systemd-udevd
+   762 root      20   0  108056    352    280 S   0.0  0.0   0:00.00 sleep
+   789 root       0 -20       0      0      0 S   0.0  0.0   1:38.56 kworker/21:1H
+   795 root      39  19       0      0      0 S   0.0  0.0  31:15.00 kipmi0
+   800 root     -51   0       0      0      0 S   0.0  0.0   0:00.00 irq/283-mei_me
+   850 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   854 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   856 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/sda1
+   857 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/sda1
+   858 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   859 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/sda1
+   860 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-cil/sda1
+   861 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/sda
+   862 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   863 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   864 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   865 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   866 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kdmflush
+   867 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   868 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/sda1
+   869 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/s
+   870 root      20   0       0      0      0 S   0.0  0.0   0:00.16 xfsaild/sda1
+   908 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/dm-3
+   909 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/dm-5
+   910 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/dm-3
+   911 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/dm-5
+   912 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/dm-3
+   913 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/dm-5
+   914 root       0 -20       0      0      0 S   0.0  0.0   0:00.01 xfs-cil/dm-3
+   915 root       0 -20       0      0      0 S   0.0  0.0   0:00.01 xfs-cil/dm-5
+   916 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/dm-
+   917 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/dm-
+   918 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/dm-3
+   919 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/dm-5
+   920 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/d
+   921 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/d
+   923 root      20   0       0      0      0 S   0.0  0.0  66:03.70 xfsaild/dm-3
+   924 root      20   0       0      0      0 S   0.0  0.0  68:21.91 xfsaild/dm-5
+   927 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/dm-6
+   928 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/dm-6
+   929 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/dm-6
+   930 root       0 -20       0      0      0 S   0.0  0.0   0:00.06 xfs-cil/dm-6
+   931 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/dm-
+   932 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/dm-4
+   933 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/dm-6
+   934 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/dm-4
+   935 root      20   0  167576   5416   4064 S   0.0  0.0   0:00.03 sshd
+   936 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/d
+   938 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/dm-4
+   939 sshd      20   0  112960   2216   1100 S   0.0  0.0   0:00.01 sshd
+   940 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-cil/dm-4
+   941 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/dm-
+   942 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/dm-4
+   943 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/d
+   944 root      20   0       0      0      0 S   0.0  0.0  14:59.11 xfsaild/dm-6
+   945 root      20   0       0      0      0 S   0.0  0.0   0:00.83 xfsaild/dm-4
+   946 root      20   0  167576   5412   4064 S   0.0  0.0   0:00.03 sshd
+   947 sshd      20   0  112960   2212   1100 S   0.0  0.0   0:00.01 sshd
+   950 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-buf/dm-2
+   951 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-data/dm-2
+   952 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-conv/dm-2
+   953 root       0 -20       0      0      0 S   0.0  0.0   0:00.01 xfs-cil/dm-2
+   954 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-reclaim/dm-
+   955 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-log/dm-2
+   956 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xfs-eofblocks/d
+   957 root      20   0       0      0      0 S   0.0  0.0  79:23.78 xfsaild/dm-2
+   988 root      16  -4   55532    728    592 S   0.0  0.0  22:54.59 auditd
+   990 root      12  -8   84556   1004    744 S   0.0  0.0  34:24.05 audispd
+   993 root      16  -4   55780   1580   1348 S   0.0  0.0  20:00.60 sedispatch
+   998 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 rpciod
+   999 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 xprtiod
+  1065 nrpe      20   0   44920   2176   2116 S   0.0  0.0  24:03.64 nrpe
+  1074 root      20   0  195208    556    556 S   0.0  0.0   0:00.01 gssproxy
+  1086 root      20   0   90568   2288   2252 S   0.0  0.0 181:46.49 rngd
+  1097 root      20   0   52900   1912   1648 S   0.0  0.0   0:23.94 smartd
+  1106 root      20   0   21964   1420    992 S   0.0  0.0 293:33.22 irqbalance
+  1121 libstor+  20   0    8676    676    640 S   0.0  0.0   0:59.94 lsmd
+  1133 root      20   0  256868   3616   3300 S   0.0  0.0   0:32.58 sssd
+  1162 rpc       20   0   69352    940    752 S   0.0  0.0   0:34.83 rpcbind
+  1180 root      20   0  333100  18100  12748 S   0.0  0.0 432:20.99 sssd_be
+  1183 root      20   0   54856   2056   1824 S   0.0  0.0   0:00.01 oddjobd
+  1184 root      20   0  584232   6772   5176 S   0.0  0.0  34:15.98 tuned
+  1186 root      20   0  198216   3692   3128 S   0.0  0.0  15:25.85 cupsd
+  1187 avahi     20   0   60460   2112   1652 S   0.0  0.0  19:33.89 avahi-daemon
+  1194 avahi     20   0   60080     76      0 S   0.0  0.0   0:00.00 avahi-daemon
+  1202 root      20   0  290692  18988  14416 S   0.0  0.0 159:00.48 sssd_nss
+  1203 root      20   0  273968   6768   5604 S   0.0  0.0   5:53.91 sssd_pam
+  1223 nx        20   0   11.7g  11.0g   6696 S   0.0  2.9  79446:56 nxserver.bin
+  1227 root      20   0   23360    444    344 S   0.0  0.0   4:49.75 ipmievd
+  1231 root      20   0  118012   3456    704 S   0.0  0.0  64:25.15 ksmtuned
+  1253 root      20   0   28080   3476   1468 S   0.0  0.0 200:51.16 systemd-logind
+  1700 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bond0
+  1707 polkitd   20   0  723828  19056   4972 S   0.0  0.0   2454:10 polkitd
+  1851 nx        20   0  631924   3936   3572 S   0.0  0.0   0:00.58 nxd
+  1854 nxhtd     20   0   38980   3904   3360 S   0.0  0.0  20:57.98 nxhtd.bin
+  1886 nxhtd     20   0   13.9g  57008   2872 S   0.0  0.0 130:06.25 nxhtd.bin
+  2233 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bond4001
+  2254 root      20   0       0      0      0 S   0.0  0.0   0:00.99 kworker/23:1
+  2383 hagenjd2  20   0  317896   3276   2644 S   0.0  0.0   0:00.11 gvfsd-metadata
+  2594 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 nfsiod
+  2603 rpcuser   20   0   44652    864    864 S   0.0  0.0   0:00.03 rpc.statd
+  2632 root      20   0       0      0      0 S   0.0  0.0   0:00.00 nfsv4.0-svc
+  2633 root      20   0       0      0      0 S   0.0  0.0   0:00.00 lockd
+  2653 root      20   0 1266660   8344   6780 S   0.0  0.0   0:57.11 libvirtd
+  2662 root      20   0   25908    728    716 S   0.0  0.0   0:01.53 atd
+  2664 root      20   0  126420   1552   1044 S   0.0  0.0   8:34.31 crond
+  2880 root      20   0 2500912   9812   2088 S   0.0  0.0   4:48.10 bootstrap_agent
+  3034 nobody    20   0   53900    672    624 S   0.0  0.0   0:01.44 dnsmasq
+  3035 root      20   0   53872     12      0 S   0.0  0.0   0:00.00 dnsmasq
+  3240 fornadma  20   0  304444   3604   3000 S   0.0  0.0   0:00.02 ibus-daemon
+  4526 root       0 -20       0      0      0 S   0.0  0.0   0:07.85 kworker/23:2H
+  4907 root       0 -20       0      0      0 S   0.0  0.0   0:07.79 kworker/19:0H
+ 11112 hassanm5  20   0  304444   3604   3000 S   0.0  0.0   0:00.02 ibus-daemon
+ 11487 hagenjd2  20   0   45644   3332   2084 S   0.0  0.0   0:00.04 qsub
+ 11793 rtkit     21   1  198808   1592   1440 S   0.0  0.0   3:51.35 rtkit-daemon
+ 11972 hagenjd2  20   0   45644   1260      0 S   0.0  0.0   0:00.01 qsub
+ 11973 hagenjd2  20   0   46448   2516    452 S   0.0  0.0   3:59.08 qsub
+ 12255 root      20   0  430376   6456   3852 S   0.0  0.0   3:00.93 upowerd
+ 12434 root      20   0  398188   5796   3228 S   0.0  0.0  99:10.84 accounts-daemon
+ 12452 geoclue   20   0  682796  29072   6108 S   0.0  0.0  70:47.80 geoclue
+ 12465 root      20   0   78684   2200   2148 S   0.0  0.0   1:26.42 wpa_supplicant
+ 12466 root      20   0  430620   3276   2688 S   0.0  0.0   1:33.59 ModemManager
+ 12481 root      20   0  516996   5252   4080 S   0.0  0.0   8:24.44 udisksd
+ 12604 root      20   0  538184  51296   4576 S   0.0  0.0  48:09.30 packagekitd
+ 12703 colord    20   0  419580   5000   4292 S   0.0  0.0   0:13.85 colord
+ 12943 root      20   0  586844   8492   5668 S   0.0  0.0  16:10.77 fwupd
+ 13394 wrigh121  20   0  453132   4940   3360 S   0.0  0.0   6:41.00 ibus-daemon
+ 15790 cannizag  20   0  523420  20292   4272 S   0.0  0.0 336:51.57 python
+ 17906 root      20   0  186228   6112   4516 S   0.0  0.0   0:01.02 sshd
+ 17924 root      20   0  186228   5944   4348 S   0.0  0.0   0:00.57 sshd
+ 17999 brudzimr  20   0  186604   3012   1308 S   0.0  0.0   0:00.96 sshd
+ 18070 brudzimr  20   0  186228   2628   1032 S   0.0  0.0   0:00.21 sshd
+ 18085 brudzimr  20   0   72288   2692   1952 S   0.0  0.0   0:00.03 sftp-server
+ 18118 brudzimr  20   0  116760   3060   1476 S   0.0  0.0   0:00.09 bash
+ 18179 brudzimr  20   0  119764   2160   1340 S   0.0  0.0   0:00.19 tcsh
+ 27159 farleik   20   0 1190904  47340  22408 S   0.0  0.0   1:07.90 nautilus
+ 29745 alaooj    20   0  113284   1200   1032 S   0.0  0.0   0:00.03 sh
+ 29782 nx        20   0  623204  73004   6180 S   0.0  0.0   0:07.78 nxserver.bin
+ 29818 root       0 -20  148544   4424   3296 S   0.0  0.0   0:00.70 nxexec
+ 29861 alaooj     0 -20 2925076 162460  65580 S   0.0  0.0   0:55.70 nxnode.bin
+ 29912 alaooj    20   0  745320   9352   6592 S   0.0  0.0   0:02.11 gnome-session-b
+ 29964 alaooj    20   0 1261272   5948   4172 S   0.0  0.0   0:28.89 pulseaudio
+ 29972 alaooj    20   0 1727168  27944  16068 S   0.0  0.0   0:10.41 nxclient.bin
+ 30039 alaooj    20   0   58908    692    268 S   0.0  0.0   0:00.00 dbus-launch
+ 30046 alaooj    20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+ 30047 alaooj    20   0   78448   1264    776 S   0.0  0.0   0:00.01 dbus-daemon
+ 30048 alaooj    20   0   79512   2664   1172 S   0.0  0.0   0:00.63 dbus-daemon
+ 30135 alaooj    20   0  391920   4312   3520 S   0.0  0.0   0:00.04 imsettings-daem
+ 30149 alaooj    20   0  388732   3980   3124 S   0.0  0.0   0:00.05 gvfsd
+ 30160 alaooj    20   0  417824   3188   2612 S   0.0  0.0   0:00.01 gvfsd-fuse
+ 30236 alaooj    20   0   72508    780      0 S   0.0  0.0   0:00.75 ssh-agent
+ 30401 alaooj    20   0  346820   3728   3076 S   0.0  0.0   0:00.02 at-spi-bus-laun
+ 30408 alaooj    20   0   78576   2496   1868 S   0.0  0.0   0:00.07 dbus-daemon
+ 30411 alaooj    20   0  233116   3924   3176 S   0.0  0.0   0:00.06 at-spi2-registr
+ 30439 alaooj    20   0  317392   3716   2844 S   0.0  0.0   0:00.05 gnome-keyring-d
+ 30451 alaooj    20   0 5302104 204972  73004 S   0.0  0.1   3:31.88 gnome-shell
+ 30537 alaooj    20   0  453128   5400   3356 S   0.0  0.0   0:03.11 ibus-daemon
+ 30541 alaooj    20   0  375968   3552   2944 S   0.0  0.0   0:00.01 ibus-dconf
+ 30543 alaooj    20   0  464808  13480   8700 S   0.0  0.0   0:00.07 ibus-x11
+ 30545 alaooj    20   0  375964   3348   2776 S   0.0  0.0   0:00.04 ibus-portal
+ 30556 alaooj    20   0  371456   3152   2564 S   0.0  0.0   0:00.00 xdg-permission-
+ 30559 alaooj    20   0  650092  11728   8936 S   0.0  0.0   0:00.07 gnome-shell-cal
+ 30566 alaooj    20   0 1444396  16368  11960 S   0.0  0.0   0:00.14 evolution-sourc
+ 30574 alaooj    20   0  893336  25172  19136 S   0.0  0.0   0:00.07 goa-daemon
+ 30581 alaooj    20   0  527716   8232   6184 S   0.0  0.0   0:08.22 goa-identity-se
+ 30593 alaooj    20   0  187524   2904   2320 S   0.0  0.0   0:00.10 dconf-service
+ 30598 alaooj    20   0  411668   7484   6112 S   0.0  0.0   0:00.90 mission-control
+ 30613 alaooj    20   0  416600   6248   4076 S   0.0  0.0   0:21.74 gvfs-udisks2-vo
+ 30623 alaooj    20   0  371692   3144   2572 S   0.0  0.0   0:00.01 gvfs-goa-volume
+ 30630 alaooj    20   0  400688   3624   2812 S   0.0  0.0   0:00.02 gvfs-gphoto2-vo
+ 30637 alaooj    20   0  478512   4376   3400 S   0.0  0.0   0:00.03 gvfs-afc-volume
+ 30645 alaooj    20   0  391600   3396   2708 S   0.0  0.0   0:00.02 gvfs-mtp-volume
+ 30676 alaooj    20   0  631660  14624   9512 S   0.0  0.0   0:01.11 gsd-power
+ 30678 alaooj    20   0  439192   5516   4180 S   0.0  0.0   0:00.13 gsd-print-notif
+ 30679 alaooj    20   0  538872   5304   2592 S   0.0  0.0   0:00.02 gsd-rfkill
+ 30680 alaooj    20   0  374184   2832   2300 S   0.0  0.0   0:00.01 gsd-screensaver
+ 30681 alaooj    20   0  559000   4208   3292 S   0.0  0.0   0:00.02 gsd-sharing
+ 30684 alaooj    20   0  455016   4724   3648 S   0.0  0.0   0:00.02 gsd-sound
+ 30689 alaooj    20   0  615256  14888   9560 S   0.0  0.0   0:00.12 gsd-xsettings
+ 30692 alaooj    20   0  549244  14008   8960 S   0.0  0.0   0:00.10 gsd-wacom
+ 30693 alaooj    20   0  472480   5060   4176 S   0.0  0.0   0:00.03 gsd-smartcard
+ 30696 alaooj    20   0  456820   3372   2760 S   0.0  0.0   0:00.02 gsd-account
+ 30711 alaooj    20   0  376492   3248   2672 S   0.0  0.0   0:00.01 gsd-a11y-settin
+ 30713 alaooj    20   0  464428  13280   8504 S   0.0  0.0   0:00.08 gsd-clipboard
+ 30717 alaooj    20   0  632124  14624   9488 S   0.0  0.0   0:35.22 gsd-color
+ 30721 alaooj    20   0  541556   8340   6288 S   0.0  0.0   0:00.02 gsd-datetime
+ 30723 alaooj    20   0  463516   6376   3380 S   0.0  0.0   1:15.51 gsd-housekeepin
+ 30727 alaooj    20   0  614128  13472   8596 S   0.0  0.0   0:00.08 gsd-keyboard
+ 30728 alaooj    20   0 1142908  15316   9968 S   0.0  0.0   0:00.96 gsd-media-keys
+ 30730 alaooj    20   0  376496   3228   2656 S   0.0  0.0   0:00.01 gsd-mouse
+ 30752 alaooj    20   0  608628   7784   5736 S   0.0  0.0   0:00.01 gsd-printer
+ 30779 alaooj    20   0 1307696  85840  20788 S   0.0  0.0   0:11.11 gnome-software
+ 30783 alaooj    20   0  273064   3536   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+ 30784 alaooj    39  19  559040  10572   7472 S   0.0  0.0   0:00.14 tracker-miner-a
+ 30785 alaooj    39  19  723816  12524   8088 S   0.0  0.0   0:03.18 tracker-miner-f
+ 30790 alaooj    20   0  884940  28880  17472 S   0.0  0.0   0:00.74 nautilus-deskto
+ 30791 alaooj    39  19  562272   9856   7128 S   0.0  0.0   0:00.04 tracker-miner-u
+ 30805 alaooj    20   0  530052  16572  10812 S   0.0  0.0   0:00.06 abrt-applet
+ 30808 alaooj    39  19  661036  15312   7752 S   0.0  0.0   0:09.57 tracker-extract
+ 30810 alaooj    20   0  309988   9656   7088 S   0.0  0.0   0:00.01 seapplet
+ 30831 alaooj    20   0  526092  14524   6264 S   0.0  0.0   0:13.31 tracker-store
+ 30858 alaooj    20   0  464896   4748   3528 S   0.0  0.0   0:02.23 gvfsd-trash
+ 30874 alaooj    20   0  916708  16280  12092 S   0.0  0.0   0:00.05 evolution-calen
+ 30929 alaooj    20   0 1200648  15964  11796 S   0.0  0.0   0:00.09 evolution-calen
+ 30948 alaooj    20   0  903432  15708  11620 S   0.0  0.0   0:00.07 evolution-addre
+ 30959 alaooj    20   0 1185660  17264  12968 S   0.0  0.0   0:00.12 evolution-addre
+ 30971 alaooj    20   0  302300   3436   2852 S   0.0  0.0   0:00.01 ibus-engine-sim
+ 31014 alaooj    20   0  318056   3404   2608 S   0.0  0.0   0:00.03 gvfsd-metadata
+ 31061 alaooj    20   0  536092   3896   3028 S   0.0  0.0   0:00.01 gvfsd-burn
+ 31138 alaooj    20   0  735904  29068  16512 S   0.0  0.0   0:00.34 gnome-terminal-
+ 31145 alaooj    20   0    8536    716    588 S   0.0  0.0   0:00.00 gnome-pty-helpe
+ 31146 alaooj    20   0  116996   3408   1608 S   0.0  0.0   0:00.09 bash
+ 31214 alaooj    20   0 1033824  32920  19464 S   0.0  0.0   0:07.00 nautilus
+ 32287 root      20   0       0      0      0 S   0.0  0.0   0:01.36 kworker/6:2
+ 36402 root      20   0  417456   6080   4384 S   0.0  0.0   0:00.09 gdm-session-wor
+ 43609 root      20   0 1487192 276572   5272 S   0.0  0.1 227:04.58 backup_agent_ma
+ 45335 root      20   0  179832   5752   4348 S   0.0  0.0   0:00.58 sshd
+ 45380 muellej   20   0  179964   2740   1224 S   0.0  0.0   3:25.50 sshd
+ 45392 muellej   20   0  113284   1204   1028 S   0.0  0.0   0:00.03 sh
+ 45463 nx        20   0  622820  72684   6184 S   0.0  0.0   0:08.68 nxserver.bin
+ 45918 root       0 -20  148544   4404   3272 S   0.0  0.0   0:00.70 nxexec
+ 46077 muellej   20   0  671588   9352   6580 S   0.0  0.0   0:02.52 gnome-session-b
+ 46130 muellej   20   0 1523432   8368   4488 S   0.0  0.0  38:10.67 pulseaudio
+ 46136 muellej   20   0 1793504  29316  16224 S   0.0  0.0   0:15.89 nxclient.bin
+ 46267 muellej   20   0   58908    948    484 S   0.0  0.0   0:00.00 dbus-launch
+ 46272 muellej   20   0   79520   2664   1176 S   0.0  0.0   0:00.71 dbus-daemon
+ 46390 muellej   20   0  392028   4512   3532 S   0.0  0.0   0:00.04 imsettings-daem
+ 46396 muellej   20   0  388728   3964   3120 S   0.0  0.0   0:00.04 gvfsd
+ 46402 muellej   20   0  417824   3196   2612 S   0.0  0.0   0:00.00 gvfsd-fuse
+ 46463 muellej   20   0   72508    784      0 S   0.0  0.0   0:00.92 ssh-agent
+ 46962 muellej    0 -20  308692  37044   4792 S   0.0  0.0  19:36.97 nxcodec.bin
+ 47025 muellej   20   0  346820   5772   3080 S   0.0  0.0   0:00.02 at-spi-bus-laun
+ 47032 muellej   20   0   78576   2488   1868 S   0.0  0.0   0:00.31 dbus-daemon
+ 47036 muellej   20   0  233116   3928   3180 S   0.0  0.0   0:00.41 at-spi2-registr
+ 47108 muellej   20   0  538612   5900   2896 S   0.0  0.0   0:00.06 gnome-keyring-d
+ 47216 muellej   20   0  453104   5412   3356 S   0.0  0.0   4:02.32 ibus-daemon
+ 47220 muellej   20   0  375968   3548   2944 S   0.0  0.0   0:00.01 ibus-dconf
+ 47222 muellej   20   0  464812  13732   8872 S   0.0  0.0   2:56.59 ibus-x11
+ 47224 muellej   20   0  375964   3352   2776 S   0.0  0.0   0:00.04 ibus-portal
+ 47234 muellej   20   0  371456   3140   2564 S   0.0  0.0   0:00.00 xdg-permission-
+ 47240 muellej   20   0  650092  13760   8936 S   0.0  0.0   0:00.07 gnome-shell-cal
+ 47245 muellej   20   0 1444400  18368  11952 S   0.0  0.0   0:00.12 evolution-sourc
+ 47253 muellej   20   0  893336  25184  19132 S   0.0  0.0   0:00.09 goa-daemon
+ 47260 muellej   20   0  527716   8228   6184 S   0.0  0.0   0:10.53 goa-identity-se
+ 47272 muellej   20   0  187524   2912   2316 S   0.0  0.0   0:00.04 dconf-service
+ 47277 muellej   20   0  411668   7684   6232 S   0.0  0.0   0:01.29 mission-control
+ 47290 muellej   20   0  416836   6492   4080 S   0.0  0.0   0:25.59 gvfs-udisks2-vo
+ 47301 muellej   20   0  371556   3140   2576 S   0.0  0.0   0:00.01 gvfs-goa-volume
+ 47307 muellej   20   0  400688   7712   2812 S   0.0  0.0   0:00.02 gvfs-gphoto2-vo
+ 47314 muellej   20   0  478512   6420   3400 S   0.0  0.0   0:00.02 gvfs-afc-volume
+ 47322 muellej   20   0  391600   3380   2704 S   0.0  0.0   0:00.01 gvfs-mtp-volume
+ 47442 muellej   20   0  631712  15120   9548 S   0.0  0.0   0:01.55 gsd-power
+ 47444 muellej   20   0  439192   7548   4184 S   0.0  0.0   0:00.16 gsd-print-notif
+ 47445 muellej   20   0  538872   3268   2596 S   0.0  0.0   0:00.02 gsd-rfkill
+ 47446 muellej   20   0  374184   2836   2300 S   0.0  0.0   0:00.01 gsd-screensaver
+ 47447 muellej   20   0  559000   4204   3288 S   0.0  0.0   0:00.03 gsd-sharing
+ 47450 muellej   20   0  472480   7100   4176 S   0.0  0.0   0:00.05 gsd-smartcard
+ 47455 muellej   20   0  455016   4716   3648 S   0.0  0.0   0:00.02 gsd-sound
+ 47458 muellej   20   0  615256  14988   9620 S   0.0  0.0   0:00.21 gsd-xsettings
+ 47465 muellej   20   0  456820   3400   2764 S   0.0  0.0   0:00.08 gsd-account
+ 47466 muellej   20   0  549256  16352   9016 S   0.0  0.0   0:00.16 gsd-wacom
+ 47476 muellej   20   0  464420  13280   8516 S   0.0  0.0   0:00.13 gsd-clipboard
+ 47477 muellej   20   0  376492   3240   2668 S   0.0  0.0   0:00.02 gsd-a11y-settin
+ 47478 muellej   20   0  463516   4296   3380 S   0.0  0.0   1:34.23 gsd-housekeepin
+ 47479 muellej   20   0  779580  17220   9528 S   0.0  0.0   0:47.37 gsd-color
+ 47482 muellej   20   0  541556   8368   6284 S   0.0  0.0   0:00.01 gsd-datetime
+ 47486 muellej   20   0  376496   5360   2648 S   0.0  0.0   0:00.02 gsd-mouse
+ 47490 muellej   20   0  614144  13656   8684 S   0.0  0.0   0:00.16 gsd-keyboard
+ 47491 muellej   20   0 1003760  17648  10160 S   0.0  0.0   0:01.47 gsd-media-keys
+ 47509 muellej   20   0  608628   7764   5736 S   0.0  0.0   0:00.02 gsd-printer
+ 47540 muellej   20   0  309872   9588   7148 S   0.0  0.0   0:00.03 seapplet
+ 47541 muellej   39  19  847136  10828   7500 S   0.0  0.0  41:14.80 tracker-miner-a
+ 47542 muellej   39  19 1410848  28008   8468 S   0.0  0.0   1396:49 tracker-miner-f
+ 47544 muellej   39  19  776688   9952   7128 S   0.0  0.0   0:01.29 tracker-miner-u
+ 47549 muellej   20   0  273064   3536   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+ 47557 muellej   20   0 1379616  84820  21212 S   0.0  0.0   0:12.86 gnome-software
+ 47562 muellej   20   0 1363060  36512  20652 S   0.0  0.0   0:02.25 nautilus-deskto
+ 47567 muellej   20   0  530252  18860  10864 S   0.0  0.0   0:00.13 abrt-applet
+ 47575 muellej   39  19 1490036  27192  12828 S   0.0  0.0 745:54.29 tracker-extract
+ 47577 muellej   20   0  916712  16272  12084 S   0.0  0.0   0:00.04 evolution-calen
+ 47610 muellej   20   0  464900   4676   3464 S   0.0  0.0   0:02.85 gvfsd-trash
+ 47646 muellej   20   0 1135112  17940  11768 S   0.0  0.0   0:00.09 evolution-calen
+ 47698 muellej   20   0  903432  17752  11620 S   0.0  0.0   0:00.06 evolution-addre
+ 47715 muellej   20   0 1185660  17252  12960 S   0.0  0.0   0:00.13 evolution-addre
+ 47740 muellej   20   0  462360   3860   3028 S   0.0  0.0   0:00.02 gvfsd-burn
+ 47746 muellej   20   0  302300   3436   2852 S   0.0  0.0   0:00.21 ibus-engine-sim
+ 47793 muellej   20   0  318032   5480   2676 S   0.0  0.0   0:00.07 gvfsd-metadata
+ 48028 farleik   20   0  113284   1204   1036 S   0.0  0.0   0:00.02 sh
+ 48063 nx        20   0  697232  73408   6164 S   0.0  0.0   1:02.30 nxserver.bin
+ 48262 muellej   20   0  758044  38376  18504 S   0.0  0.0   4:19.85 gnome-terminal-
+ 48269 muellej   20   0    8536    732    600 S   0.0  0.0   0:00.01 gnome-pty-helpe
+ 48270 muellej   20   0  120440   7052   1808 S   0.0  0.0   0:00.39 bash
+ 48776 root       0 -20  148544   4400   3272 S   0.0  0.0   0:00.31 nxexec
+ 48805 farleik    0 -20 3266792 402268 113868 S   0.0  0.1  54:40.27 nxnode.bin
+ 48977 farleik   20   0  673712  11596   6680 S   0.0  0.0   0:21.49 gnome-session-b
+ 49053 farleik   20   0 1261420   6360   4464 S   0.0  0.0  18:38.69 pulseaudio
+ 49071 farleik   20   0 1801716  27832  16312 S   0.0  0.0   1:16.07 nxclient.bin
+ 49288 farleik   20   0   58908    956    484 S   0.0  0.0   0:00.00 dbus-launch
+ 49290 farleik   20   0   79564   2776   1176 S   0.0  0.0   0:06.43 dbus-daemon
+ 49415 farleik   20   0  391916   6400   3508 S   0.0  0.0   0:00.04 imsettings-daem
+ 49425 farleik   20   0  388740   3984   3124 S   0.0  0.0   0:00.18 gvfsd
+ 49432 farleik   20   0  417824   3196   2608 S   0.0  0.0   0:00.00 gvfsd-fuse
+ 49473 muellej   20   0  120280   6804   1676 S   0.0  0.0   0:00.13 bash
+ 49674 farleik   20   0   72508    916    132 S   0.0  0.0   0:08.93 ssh-agent
+ 49785 farleik   20   0  346824   3636   3036 S   0.0  0.0   0:00.01 at-spi-bus-laun
+ 49791 farleik   20   0   78580   2516   1868 S   0.0  0.0   0:03.86 dbus-daemon
+ 49797 farleik   20   0  233116   6228   3328 S   0.0  0.0   0:08.82 at-spi2-registr
+ 49839 farleik   20   0  317392   3724   2852 S   0.0  0.0   0:00.19 gnome-keyring-d
+ 49858 farleik   20   0 5391180 319732  76864 S   0.0  0.1 297:53.55 gnome-shell
+ 50125 grindlm   20   0  470388   5144   3724 S   0.0  0.0   0:22.76 pulseaudio
+ 50415 farleik   20   0  453104   5496   3364 S   0.0  0.0   0:41.37 ibus-daemon
+ 50419 farleik   20   0  375968   5600   2944 S   0.0  0.0   0:00.01 ibus-dconf
+ 50421 farleik   20   0  464812  13776   8868 S   0.0  0.0   0:01.96 ibus-x11
+ 50423 farleik   20   0  375964   3348   2776 S   0.0  0.0   0:00.08 ibus-portal
+ 50434 farleik   20   0  371456   3140   2564 S   0.0  0.0   0:00.01 xdg-permission-
+ 50438 farleik   20   0  650092  11728   8936 S   0.0  0.0   0:00.62 gnome-shell-cal
+ 50444 farleik   20   0 1444436  16548  11972 S   0.0  0.0   0:00.29 evolution-sourc
+ 50452 farleik   20   0  893332  25168  19132 S   0.0  0.0   0:00.08 goa-daemon
+ 50459 farleik   20   0  527716   8232   6184 S   0.0  0.0   1:43.58 goa-identity-se
+ 50470 farleik   20   0  187524   2920   2316 S   0.0  0.0   0:02.22 dconf-service
+ 50478 farleik   20   0  411668   7676   6232 S   0.0  0.0   0:08.14 mission-control
+ 50488 farleik   20   0  422192  11920   4092 S   0.0  0.0   3:37.24 gvfs-udisks2-vo
+ 50501 farleik   20   0  371692   3140   2572 S   0.0  0.0   0:00.04 gvfs-goa-volume
+ 50507 farleik   20   0  400688   3624   2812 S   0.0  0.0   0:00.04 gvfs-gphoto2-vo
+ 50514 farleik   20   0  478512   4380   3400 S   0.0  0.0   0:00.11 gvfs-afc-volume
+ 50522 farleik   20   0  391600   3380   2704 S   0.0  0.0   0:00.04 gvfs-mtp-volume
+ 50600 hayespj   20   0  453308   5644   3360 S   0.0  0.0   5:09.52 ibus-daemon
+ 50755 farleik   20   0  631716  15960   9564 S   0.0  0.0   0:11.81 gsd-power
+ 50804 farleik   20   0  439192   5600   4216 S   0.0  0.0   0:01.58 gsd-print-notif
+ 50805 farleik   20   0  538872   3264   2596 S   0.0  0.0   0:00.12 gsd-rfkill
+ 50813 farleik   20   0  374184   2836   2300 S   0.0  0.0   0:00.11 gsd-screensaver
+ 50814 farleik   20   0  559000   4476   3536 S   0.0  0.0   0:00.13 gsd-sharing
+ 50822 farleik   20   0  455016   4724   3652 S   0.0  0.0   0:00.12 gsd-sound
+ 50837 farleik   20   0  615248  14952   9624 S   0.0  0.0   0:00.93 gsd-xsettings
+ 50842 farleik   20   0  549252  15112   9016 S   0.0  0.0   0:00.70 gsd-wacom
+ 50848 farleik   20   0  472476   5068   4184 S   0.0  0.0   0:00.15 gsd-smartcard
+ 50851 farleik   20   0  456820   3384   2764 S   0.0  0.0   0:00.48 gsd-account
+ 50885 farleik   20   0  376492   3244   2672 S   0.0  0.0   0:00.12 gsd-a11y-settin
+ 50887 farleik   20   0  464420  13272   8512 S   0.0  0.0   0:00.59 gsd-clipboard
+ 50898 farleik   20   0  783328  19516   9404 S   0.0  0.0  26:52.41 gsd-color
+ 50903 farleik   20   0  541556   8356   6280 S   0.0  0.0   0:00.13 gsd-datetime
+ 50904 farleik   20   0  463632   6624   3384 S   0.0  0.0  13:41.85 gsd-housekeepin
+ 50905 farleik   20   0  614140  13504   8616 S   0.0  0.0   0:00.69 gsd-keyboard
+ 50911 farleik   20   0  930028  15716  10220 S   0.0  0.0   0:09.40 gsd-media-keys
+ 50915 farleik   20   0  376496   3304   2652 S   0.0  0.0   0:00.12 gsd-mouse
+ 50935 farleik   20   0  608628   7768   5736 S   0.0  0.0   0:00.13 gsd-printer
+ 50981 farleik   20   0 1379084 113736  21232 S   0.0  0.0   1:37.41 gnome-software
+ 50986 farleik   20   0  273064   3536   2616 S   0.0  0.0   0:00.01 gsd-disk-utilit
+ 50987 farleik   39  19  632512  10708   7500 S   0.0  0.0   0:00.20 tracker-miner-a
+ 50989 farleik   39  19  649320  11640   8120 S   0.0  0.0   0:17.25 tracker-miner-f
+ 50999 farleik   20   0 1095996  31336  18584 S   0.0  0.0   0:10.81 nautilus-deskto
+ 51004 farleik   39  19  562012   9860   7128 S   0.0  0.0   0:00.03 tracker-miner-u
+ 51007 farleik   20   0  729712  31412   6288 S   0.0  0.0   0:05.36 tracker-store
+ 51030 farleik   20   0  530252  16816  10860 S   0.0  0.0   0:00.43 abrt-applet
+ 51033 farleik   39  19  738144  15048   7916 S   0.0  0.0   0:29.55 tracker-extract
+ 51034 farleik   20   0  309868   9584   7140 S   0.0  0.0   0:00.07 seapplet
+ 51059 farleik   20   0  559076   7752   4080 S   0.0  0.0   0:28.05 gvfsd-trash
+ 51127 farleik   20   0  916712  16288  12080 S   0.0  0.0   0:00.05 evolution-calen
+ 51157 farleik   20   0 1200648  16280  11804 S   0.0  0.0   0:00.57 evolution-calen
+ 51175 farleik   20   0  903432  15708  11620 S   0.0  0.0   0:00.07 evolution-addre
+ 51190 farleik   20   0 1185660  17244  12956 S   0.0  0.0   0:00.23 evolution-addre
+ 51200 farleik   20   0  302300   3800   2968 S   0.0  0.0   0:02.58 ibus-engine-sim
+ 51295 farleik   20   0  462360   3864   3028 S   0.0  0.0   0:00.03 gvfsd-burn
+ 51720 farleik   20   0  319592   4860   2716 S   0.0  0.0   0:04.28 gvfsd-metadata
+ 55975 root      20   0  718036  69776  67968 S   0.0  0.0 520:21.92 rsyslogd
+ 62645 farleik   20   0  768844  36280  20452 S   0.0  0.0   0:55.92 gnome-terminal-
+ 62657 farleik   20   0    8536    716    588 S   0.0  0.0   0:00.00 gnome-pty-helpe
+ 62658 farleik   20   0  116992   3496   1676 S   0.0  0.0   0:00.07 bash
+ 63400 hagenjd2  20   0  116864   3396   1680 S   0.0  0.0   0:00.10 bash
+ 63489 hagenjd2  20   0   45644   3060   2080 S   0.0  0.0   0:00.02 qsub
+ 63496 hagenjd2  20   0   45644    992      0 S   0.0  0.0   0:00.00 qsub
+ 63497 hagenjd2  20   0   46448   2248    452 S   0.0  0.0   3:28.40 qsub
+ 63532 tiltonns  20   0  113284   1204   1036 S   0.0  0.0   0:00.03 sh
+ 63577 nx        20   0  697144  73312   6192 S   0.0  0.0   0:04.75 nxserver.bin
+ 63734 root       0 -20  148544   4428   3300 S   0.0  0.0   0:00.74 nxexec
+ 63791 tiltonns   0 -20 3134104 216212  74688 S   0.0  0.1   9:16.38 nxnode.bin
+ 63875 tiltonns  20   0  673712   9476   6664 S   0.0  0.0   0:01.38 gnome-session-b
+ 63925 tiltonns  20   0 1261272   6072   4248 S   0.0  0.0   2:05.80 pulseaudio
+ 63937 tiltonns  20   0 1727168  25836  15964 S   0.0  0.0   0:04.43 nxclient.bin
+ 64007 tiltonns  20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+ 64010 tiltonns  20   0   58908    692    268 S   0.0  0.0   0:00.00 dbus-launch
+ 64011 tiltonns  20   0   78448   1268    776 S   0.0  0.0   0:00.01 dbus-daemon
+ 64012 tiltonns  20   0   79548   2696   1176 S   0.0  0.0   0:01.74 dbus-daemon
+ 64103 tiltonns  20   0  391916   4216   3480 S   0.0  0.0   0:00.04 imsettings-daem
+ 64125 tiltonns  20   0  388756   4028   3124 S   0.0  0.0   0:00.07 gvfsd
+ 64135 tiltonns  20   0  417824   3196   2612 S   0.0  0.0   0:00.01 gvfsd-fuse
+ 64192 tiltonns  20   0   72508    780      0 S   0.0  0.0   0:00.44 ssh-agent
+ 64305 tiltonns  20   0  346820   3732   3080 S   0.0  0.0   0:00.02 at-spi-bus-laun
+ 64310 tiltonns  20   0   78580   2496   1872 S   0.0  0.0   0:00.73 dbus-daemon
+ 64313 tiltonns  20   0  233120   4068   3304 S   0.0  0.0   0:01.91 at-spi2-registr
+ 64337 tiltonns  20   0  317392   3716   2844 S   0.0  0.0   0:00.05 gnome-keyring-d
+ 64349 tiltonns  20   0 5420552 263848  82192 S   0.0  0.1  39:47.87 gnome-shell
+ 64485 tiltonns  20   0  453128   5376   3344 S   0.0  0.0   0:01.98 ibus-daemon
+ 64494 tiltonns  20   0  375968   3552   2944 S   0.0  0.0   0:00.02 ibus-dconf
+ 64496 tiltonns  20   0  464808  13476   8696 S   0.0  0.0   0:00.21 ibus-x11
+ 64498 tiltonns  20   0  375964   3348   2776 S   0.0  0.0   0:00.04 ibus-portal
+ 64507 tiltonns  20   0  371456   3140   2564 S   0.0  0.0   0:00.00 xdg-permission-
+ 64514 tiltonns  20   0  649964  11732   8936 S   0.0  0.0   0:00.08 gnome-shell-cal
+ 64519 tiltonns  20   0 1444404  16376  11960 S   0.0  0.0   0:00.11 evolution-sourc
+ 64527 tiltonns  20   0  893332  25168  19132 S   0.0  0.0   0:00.08 goa-daemon
+ 64534 tiltonns  20   0  527716   8160   6120 S   0.0  0.0   0:03.91 goa-identity-se
+ 64547 tiltonns  20   0  187524   2908   2316 S   0.0  0.0   0:00.26 dconf-service
+ 64553 tiltonns  20   0  411796   7652   6212 S   0.0  0.0   0:00.61 mission-control
+ 64565 tiltonns  20   0  416336   5988   4080 S   0.0  0.0   0:12.65 gvfs-udisks2-vo
+ 64575 tiltonns  20   0  371556   3144   2572 S   0.0  0.0   0:00.01 gvfs-goa-volume
+ 64582 tiltonns  20   0  400688   3628   2812 S   0.0  0.0   0:00.01 gvfs-gphoto2-vo
+ 64590 tiltonns  20   0  478512   4376   3400 S   0.0  0.0   0:00.01 gvfs-afc-volume
+ 64597 tiltonns  20   0  391600   3380   2704 S   0.0  0.0   0:00.01 gvfs-mtp-volume
+ 64618 tiltonns  20   0  631640  14828   9544 S   0.0  0.0   0:00.91 gsd-power
+ 64620 tiltonns  20   0  439192   5516   4188 S   0.0  0.0   0:00.12 gsd-print-notif
+ 64621 tiltonns  20   0  538872   3272   2596 S   0.0  0.0   0:00.04 gsd-rfkill
+ 64622 tiltonns  20   0  374184   2832   2300 S   0.0  0.0   0:00.03 gsd-screensaver
+ 64623 tiltonns  20   0  559000   4208   3288 S   0.0  0.0   0:00.05 gsd-sharing
+ 64626 tiltonns  20   0  455016   4728   3652 S   0.0  0.0   0:00.05 gsd-sound
+ 64631 tiltonns  20   0  615268  14960   9612 S   0.0  0.0   0:00.33 gsd-xsettings
+ 64633 tiltonns  20   0  549244  14020   8968 S   0.0  0.0   0:00.24 gsd-wacom
+ 64637 tiltonns  20   0  472480   5056   4172 S   0.0  0.0   0:00.07 gsd-smartcard
+ 64639 tiltonns  20   0  456820   3376   2764 S   0.0  0.0   0:00.07 gsd-account
+ 64654 tiltonns  20   0  376492   3244   2672 S   0.0  0.0   0:00.04 gsd-a11y-settin
+ 64657 tiltonns  20   0  464424  13284   8512 S   0.0  0.0   0:00.22 gsd-clipboard
+ 64659 tiltonns  20   0  632036  14612   9380 S   0.0  0.0   0:15.93 gsd-color
+ 64661 tiltonns  20   0  541556   8344   6300 S   0.0  0.0   0:00.05 gsd-datetime
+ 64664 tiltonns  20   0  463648   4508   3396 S   0.0  0.0   0:43.80 gsd-housekeepin
+ 64665 tiltonns  20   0  614236  13540   8680 S   0.0  0.0   0:00.23 gsd-keyboard
+ 64668 tiltonns  20   0  995424  15192   9912 S   0.0  0.0   0:00.77 gsd-media-keys
+ 64672 tiltonns  20   0  376496   3332   2664 S   0.0  0.0   0:00.04 gsd-mouse
+ 64693 tiltonns  20   0  608628   7764   5740 S   0.0  0.0   0:00.01 gsd-printer
+ 64721 tiltonns  20   0 1373848  82476  20788 S   0.0  0.0   0:08.19 gnome-software
+ 64725 tiltonns  20   0  273064   3540   2620 S   0.0  0.0   0:00.00 gsd-disk-utilit
+ 64726 tiltonns  39  19  632520  10636   7468 S   0.0  0.0   0:00.05 tracker-miner-a
+ 64728 tiltonns  39  19  993428  12080   8192 S   0.0  0.0   0:00.38 tracker-miner-f
+ 64732 tiltonns  20   0  884060  27932  17264 S   0.0  0.0   0:01.25 nautilus-deskto
+ 64736 tiltonns  39  19  562012   9860   7128 S   0.0  0.0   0:00.03 tracker-miner-u
+ 64747 tiltonns  20   0  529964  16568  10804 S   0.0  0.0   0:00.18 abrt-applet
+ 64749 tiltonns  39  19  812400  11900   8044 S   0.0  0.0   0:03.90 tracker-extract
+ 64753 tiltonns  20   0  309984   9648   7084 S   0.0  0.0   0:00.01 seapplet
+ 64773 tiltonns  20   0  723212  16620   6104 S   0.0  0.0   0:00.84 tracker-store
+ 64796 tiltonns  20   0  538628   4776   3520 S   0.0  0.0   0:01.26 gvfsd-trash
+ 64861 tiltonns  20   0  916712  16264  12084 S   0.0  0.0   0:00.09 evolution-calen
+ 64874 tiltonns  20   0 1200648  15968  11800 S   0.0  0.0   0:00.11 evolution-calen
+ 64887 farleik   20   0   45644   3056   2080 S   0.0  0.0   0:00.08 qsub
+ 64896 tiltonns  20   0  903432  15700  11608 S   0.0  0.0   0:00.06 evolution-addre
+ 64918 tiltonns  20   0  302300   3448   2864 S   0.0  0.0   0:00.00 ibus-engine-sim
+ 64933 tiltonns  20   0 1185660  17256  12964 S   0.0  0.0   0:00.10 evolution-addre
+ 64944 farleik   20   0   45644   1164    176 S   0.0  0.0   0:05.69 qsub
+ 64946 farleik   20   0   46448   1984    204 S   0.0  0.0   0:00.00 qsub
+ 64980 tiltonns  20   0  317984   3400   2672 S   0.0  0.0   0:00.25 gvfsd-metadata
+ 64988 tiltonns  20   0  536092   3892   3032 S   0.0  0.0   0:00.01 gvfsd-burn
+ 65168 tiltonns  20   0  746132  30280  17384 S   0.0  0.0   0:01.45 gnome-terminal-
+ 65176 tiltonns  20   0    8536    712    584 S   0.0  0.0   0:00.00 gnome-pty-helpe
+ 65177 tiltonns  20   0  116864   3352   1640 S   0.0  0.0   0:00.10 bash
+ 65248 tiltonns  20   0   45644   3064   2084 S   0.0  0.0   0:00.02 qsub
+ 65256 tiltonns  20   0   45644    996      0 S   0.0  0.0   0:00.00 qsub
+ 65257 tiltonns  20   0   46448   2248    448 S   0.0  0.0   0:10.36 qsub
+ 65690 farleik   20   0  542880   4552   3576 S   0.0  0.0   0:00.27 gvfsd-network
+ 67831 root      20   0       0      0      0 S   0.0  0.0   0:01.24 kworker/9:1
+ 72668 tiltonns  20   0 1101020  35752  18752 S   0.0  0.0   0:26.32 nautilus
+ 74214 cannizag  20   0  450192  21268   4276 S   0.0  0.0 380:29.22 python
+ 75720 tiltonns  20   0 1145872  83888  18848 S   0.0  0.0   2:25.67 gedit
+ 76450 tiltonns  20   0  542880   6584   3576 S   0.0  0.0   0:00.07 gvfsd-network
+ 76474 tiltonns  20   0  493664   4640   3620 S   0.0  0.0   0:00.39 gvfsd-dnssd
+ 77805 ander210  20   0  220292   5824   4012 S   0.0  0.0   0:07.30 icpc
+ 77826 ander210  20   0  176088 122480  16004 S   0.0  0.0   0:00.48 mcpcom
+ 79224 root      20   0  112924   4364   3344 S   0.0  0.0  49:29.72 sshd
+ 80196 strasbm3  20   0  453344   5568   3368 S   0.0  0.0   2:43.90 ibus-daemon
+ 83650 root      20   0  268740   4944   3672 S   0.0  0.0   0:00.03 sudo
+ 83654 software  20   0  117348   3992   1800 S   0.0  0.0   0:00.97 bash
+ 84628 root      20   0  417456   7144   4388 S   0.0  0.0   0:00.20 gdm-session-wor
+ 85493 fitzgev   20   0  113284   1204   1032 S   0.0  0.0   0:00.03 sh
+ 85533 nx        20   0  697192  73348   6188 S   0.0  0.0   0:04.16 nxserver.bin
+ 85601 grindlm   20   0   72472   1224    440 S   0.0  0.0   0:00.03 ssh-agent
+ 86745 root       0 -20       0      0      0 S   0.0  0.0   0:00.24 kworker/7:2H
+ 87990 prochaci  20   0  593660  81696   4680 S   0.0  0.0 401:38.58 rsession
+ 88395 prochaci  20   0  824632 177716   5628 S   0.0  0.0 329:35.97 rsession
+ 88647 muellej   20   0  120412   7064   1804 S   0.0  0.0   0:00.63 bash
+ 90718 root       0 -20  148544   4428   3300 S   0.0  0.0   0:00.73 nxexec
+ 91057 fitzgev    0 -20 3481840 213320  83688 S   0.0  0.1  10:46.43 nxnode.bin
+ 91471 fitzgev   20   0  673704   9544   6684 S   0.0  0.0   0:01.51 gnome-session-b
+ 91556 fitzgev   20   0 1785696   8928   7004 S   0.0  0.0   5:41.88 pulseaudio
+ 91580 fitzgev   20   0 1744676  43540  16212 S   0.0  0.0   0:07.51 nxclient.bin
+ 91737 fitzgev   20   0   58908    696    268 S   0.0  0.0   0:00.00 dbus-launch
+ 91751 fitzgev   20   0   78448   1268    776 S   0.0  0.0   0:00.00 dbus-daemon
+ 91759 fitzgev   20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+ 91764 fitzgev   20   0   79612   2824   1176 S   0.0  0.0   0:01.89 dbus-daemon
+ 91861 fitzgev   20   0  391912   4212   3480 S   0.0  0.0   0:00.04 imsettings-daem
+ 91870 fitzgev   20   0  388732   4000   3124 S   0.0  0.0   0:00.13 gvfsd
+ 91881 fitzgev   20   0  417824   3192   2616 S   0.0  0.0   0:00.01 gvfsd-fuse
+ 91939 fitzgev   20   0   72508    780      0 S   0.0  0.0   0:00.42 ssh-agent
+ 91993 fitzgev   20   0  346808   3724   3068 S   0.0  0.0   0:00.01 at-spi-bus-laun
+ 91998 fitzgev   20   0   78580   2512   1872 S   0.0  0.0   0:00.98 dbus-daemon
+ 92001 fitzgev   20   0  233116   4072   3304 S   0.0  0.0   0:02.03 at-spi2-registr
+ 92034 fitzgev   20   0  317392   3716   2844 S   0.0  0.0   0:00.13 gnome-keyring-d
+ 92046 fitzgev   20   0 5677940 286496  77624 S   0.0  0.1  38:02.72 gnome-shell
+ 92124 fitzgev   20   0  453312   5628   3352 S   0.0  0.0   0:02.70 ibus-daemon
+ 92128 fitzgev   20   0  375956   3548   2944 S   0.0  0.0   0:00.01 ibus-dconf
+ 92130 fitzgev   20   0  464808  13468   8696 S   0.0  0.0   0:00.11 ibus-x11
+ 92132 fitzgev   20   0  375964   3348   2776 S   0.0  0.0   0:00.09 ibus-portal
+ 92143 fitzgev   20   0  371456   3140   2564 S   0.0  0.0   0:00.00 xdg-permission-
+ 92147 fitzgev   20   0  650088  11724   8936 S   0.0  0.0   0:00.23 gnome-shell-cal
+ 92153 fitzgev   20   0 1444472  16440  11988 S   0.0  0.0   0:00.13 evolution-sourc
+ 92160 fitzgev   20   0  187424   2952   2400 S   0.0  0.0   0:00.40 dconf-service
+ 92165 fitzgev   20   0  893324  25164  19132 S   0.0  0.0   0:00.08 goa-daemon
+ 92177 fitzgev   20   0  527716   8160   6120 S   0.0  0.0   0:05.07 goa-identity-se
+ 92190 fitzgev   20   0  411660   7492   6120 S   0.0  0.0   0:00.60 mission-control
+ 92202 fitzgev   20   0  416200   5884   4088 S   0.0  0.0   0:11.34 gvfs-udisks2-vo
+ 92212 fitzgev   20   0  371556   3144   2572 S   0.0  0.0   0:00.02 gvfs-goa-volume
+ 92218 fitzgev   20   0  400688   3628   2812 S   0.0  0.0   0:00.02 gvfs-gphoto2-vo
+ 92225 fitzgev   20   0  478512   4380   3400 S   0.0  0.0   0:00.02 gvfs-afc-volume
+ 92233 fitzgev   20   0  391600   3380   2704 S   0.0  0.0   0:00.02 gvfs-mtp-volume
+ 92255 fitzgev   20   0  631636  14852   9540 S   0.0  0.0   0:00.89 gsd-power
+ 92258 fitzgev   20   0  439192   5524   4188 S   0.0  0.0   0:00.12 gsd-print-notif
+ 92259 fitzgev   20   0  538872   3264   2596 S   0.0  0.0   0:00.05 gsd-rfkill
+ 92260 fitzgev   20   0  374184   2832   2300 S   0.0  0.0   0:00.04 gsd-screensaver
+ 92261 fitzgev   20   0  558992   4204   3288 S   0.0  0.0   0:00.05 gsd-sharing
+ 92263 fitzgev   20   0  455008   4716   3652 S   0.0  0.0   0:00.05 gsd-sound
+ 92268 fitzgev   20   0  615268  15064   9632 S   0.0  0.0   0:00.21 gsd-xsettings
+ 92271 fitzgev   20   0  549240  14276   8992 S   0.0  0.0   0:00.17 gsd-wacom
+ 92272 fitzgev   20   0  472472   5056   4172 S   0.0  0.0   0:00.07 gsd-smartcard
+ 92277 fitzgev   20   0  456812   3380   2764 S   0.0  0.0   0:00.08 gsd-account
+ 92290 fitzgev   20   0  376484   3244   2672 S   0.0  0.0   0:00.04 gsd-a11y-settin
+ 92291 fitzgev   20   0  464432  13284   8508 S   0.0  0.0   0:00.13 gsd-clipboard
+ 92293 fitzgev   20   0  705800  14812   9376 S   0.0  0.0   0:14.57 gsd-color
+ 92296 fitzgev   20   0  541548   8340   6300 S   0.0  0.0   0:00.04 gsd-datetime
+ 92300 fitzgev   20   0  463512   4176   3180 S   0.0  0.0   0:41.85 gsd-housekeepin
+ 92303 fitzgev   20   0  614128  13596   8716 S   0.0  0.0   0:00.15 gsd-keyboard
+ 92304 fitzgev   20   0 1077388  15424  10068 S   0.0  0.0   0:00.71 gsd-media-keys
+ 92307 fitzgev   20   0  376488   3228   2656 S   0.0  0.0   0:00.04 gsd-mouse
+ 92327 fitzgev   20   0  608628   7768   5736 S   0.0  0.0   0:00.04 gsd-printer
+ 92358 fitzgev   20   0 1305500  73836  21044 S   0.0  0.0   0:07.65 gnome-software
+ 92363 fitzgev   20   0  273064   3536   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+ 92365 fitzgev   39  19  911300  10928   7384 S   0.0  0.0   0:00.20 tracker-miner-a
+ 92369 fitzgev   39  19  649192  11172   7888 S   0.0  0.0   0:00.12 tracker-miner-f
+ 92374 fitzgev   20   0  888960  28856  17828 S   0.0  0.0   0:06.25 nautilus-deskto
+ 92377 fitzgev   39  19  562012   9868   7136 S   0.0  0.0   0:00.03 tracker-miner-u
+ 92388 fitzgev   20   0  529960  16568  10808 S   0.0  0.0   0:00.10 abrt-applet
+ 92391 fitzgev   39  19  660768  12580   7732 S   0.0  0.0   0:00.12 tracker-extract
+ 92394 fitzgev   20   0  309984   9644   7084 S   0.0  0.0   0:00.03 seapplet
+ 92413 fitzgev   20   0  595200  16996   6144 S   0.0  0.0   0:00.68 tracker-store
+ 92429 fitzgev   20   0  538764   4912   3528 S   0.0  0.0   0:01.11 gvfsd-trash
+ 92495 fitzgev   20   0  916700  16264  12084 S   0.0  0.0   0:00.07 evolution-calen
+ 92534 fitzgev   20   0 1207260  16240  12032 S   0.0  0.0   0:00.27 evolution-calen
+ 92565 fitzgev   20   0  903424  15712  11620 S   0.0  0.0   0:00.07 evolution-addre
+ 92626 fitzgev   20   0 1185652  17056  12784 S   0.0  0.0   0:00.08 evolution-addre
+ 92664 fitzgev   20   0  317896   3300   2648 S   0.0  0.0   0:00.16 gvfsd-metadata
+ 92677 fitzgev   20   0  302300   3436   2852 S   0.0  0.0   0:00.37 ibus-engine-sim
+ 92772 fitzgev   20   0  536092   3892   3032 S   0.0  0.0   0:00.02 gvfsd-burn
+ 93214 cannizag  20   0  523420  20316   4272 S   0.0  0.0 334:04.22 python
+ 93269 sahuid    20   0   45644    992      0 S   0.0  0.0   0:00.00 qsub
+ 93963 muellej   20   0  120280   6808   1676 S   0.0  0.0   0:00.13 bash
+ 94056 muellej   20   0  120280   6804   1676 S   0.0  0.0   0:00.12 bash
+ 94173 root       0 -20       0      0      0 S   0.0  0.0   0:01.19 kworker/0:0H
+ 95021 muellej   20   0  178844   4332   3324 S   0.0  0.0   0:08.90 ssh
+ 95023 muellej   20   0   72512   3120   2332 S   0.0  0.0   0:00.00 ssh-agent
+ 95047 muellej   20   0  180916   4392   3380 S   0.0  0.0   0:08.02 ssh
+ 98617 root      20   0  335860   4164   3452 S   0.0  0.0   0:10.60 gdm-session-wor
+ 98848 gdm        9 -11 1171544   2860   2404 S   0.0  0.0   0:00.06 pulseaudio
+102490 muellej   20   0   46292   3404   2400 S   0.0  0.0   0:00.05 qsub
+102577 muellej   20   0   46292   1236    220 S   0.0  0.0   0:00.16 qsub
+102578 muellej   20   0   47096   2384    564 S   0.0  0.0   1:03.62 qsub
+103626 morris75  20   0  456340  10956   3364 S   0.0  0.0   4:28.45 ibus-daemon
+107020 ascaniaa  20   0   45644    992      0 S   0.0  0.0   0:00.00 qsub
+107037 chamitu   20   0  453124   7444   3368 S   0.0  0.0   2:28.30 ibus-daemon
+107540 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/20:1H
+110158 root       0 -20       0      0      0 S   0.0  0.0   0:01.06 kworker/6:0H
+112399 root      20   0  186228   6112   4516 S   0.0  0.0   0:00.50 sshd
+112439 wilso240  20   0  186372   2880   1156 S   0.0  0.0   0:03.30 sshd
+112444 wilso240  20   0   72392   3056   2132 S   0.0  0.0   0:05.78 sftp-server
+112984 root      20   0  417456   9180   4388 S   0.0  0.0   0:00.19 gdm-session-wor
+114686 root       0 -20       0      0      0 S   0.0  0.0   0:18.01 kworker/1:0H
+115370 root       0 -20       0      0      0 S   0.0  0.0   0:00.91 kworker/14:1H
+116881 wrigh121  20   0  453096   5512   3364 S   0.0  0.0   4:49.06 ibus-daemon
+118641 root      20   0       0      0      0 S   0.0  0.0   0:00.28 kworker/8:0
+125971 root       0 -20       0      0      0 S   0.0  0.0   0:15.80 kworker/0:1H
+131167 root      20   0  102904   2792    716 S   0.0  0.0   0:00.89 dhclient
+133710 root       0 -20       0      0      0 S   0.0  0.0   0:27.95 kworker/22:1H
+137140 root      20   0  348108   4568   3484 S   0.0  0.0   0:09.02 gdm-session-wor
+137917 ntp       20   0   29956   1588   1424 S   0.0  0.0   1:58.30 ntpd
+142204 cannizag  20   0  523412  20476   4272 S   0.0  0.0 379:53.81 python
+146184 root       0 -20       0      0      0 S   0.0  0.0   0:02.44 kworker/1:2H
+146505 trippigd  20   0  453100   5404   3360 S   0.0  0.0   1:12.88 ibus-daemon
+147245 root       0 -20       0      0      0 S   0.0  0.0   0:15.83 kworker/8:2H
+147610 flynnkm   20   0  585948   5852   3744 S   0.0  0.0   0:01.01 sd_espeak
+147616 flynnkm   20   0  123680   2488   1744 S   0.0  0.0   0:00.00 sd_dummy
+147618 flynnkm   20   0   94268    584    324 S   0.0  0.0   0:00.00 speech-dispatch
+148322 xus2      20   0  453128   5448   3364 S   0.0  0.0   2:25.73 ibus-daemon
+148767 fitzgev   20   0 1194836  51624  23508 S   0.0  0.0   0:56.25 nautilus
+150187 fitzgev   20   0  181780   2964   2384 S   0.0  0.0   0:00.15 gconfd-2
+150685 fitzgev   20   0 3831928 420976 146696 S   0.0  0.1  12:35.70 firefox-bin
+150844 fitzgev   20   0 2699912  66820  36620 S   0.0  0.0   0:18.75 WebExtensions
+150935 fitzgev   20   0 3090532 167740  76524 S   0.0  0.0   1:28.37 Web Content
+151855 root       0 -20       0      0      0 S   0.0  0.0   0:04.28 kworker/11:2H
+152012 fitzgev   20   0 3378916 317996  77016 S   0.0  0.1   6:43.72 Web Content
+154946 root       0 -20       0      0      0 S   0.0  0.0   0:15.82 kworker/7:0H
+155961 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/4:0H
+156262 mongod    20   0 1052136 122280   5756 S   0.0  0.0   1610:12 mongod
+157113 root      20   0       0      0      0 S   0.0  0.0   0:00.51 kworker/7:2
+157199 root       0 -20       0      0      0 S   0.0  0.0   0:21.04 kworker/16:0H
+157543 root      20   0   91788   2196   1148 S   0.0  0.0   4:16.74 master
+157585 postfix   20   0  102236   4396   3244 S   0.0  0.0   1:18.87 qmgr
+158474 fornadma  20   0  453128   5416   3356 S   0.0  0.0   1:48.15 ibus-daemon
+159227 connorkg  20   0  453104   5444   3360 S   0.0  0.0   5:12.85 ibus-daemon
+160663 dalesiew  20   0  453100   5392   3364 S   0.0  0.0   3:03.24 ibus-daemon
+163366 xus2      20   0  304444   3604   3000 S   0.0  0.0   0:00.01 ibus-daemon
+164255 root      20   0  417456   6088   4388 S   0.0  0.0   0:00.07 gdm-session-wor
+165170 root      20   0       0      0      0 S   0.0  0.0   0:02.79 kworker/0:2
+165839 root      20   0  417456   6080   4384 S   0.0  0.0   0:00.07 gdm-session-wor
+165854 wrigh121  20   0  304444   3604   3000 S   0.0  0.0   0:00.02 ibus-daemon
+167856 root       0 -20       0      0      0 S   0.0  0.0   0:06.72 kworker/3:0H
+169257 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+169498 root       0 -20       0      0      0 S   0.0  0.0   0:01.60 kworker/3:2H
+169612 root      30  10       0      0      0 Z   0.0  0.0   0:00.26 yumBackend.py
+170908 cannizag  20   0  449948  20456   4268 S   0.0  0.0 376:56.94 python
+170992 root      20   0  561864  20084   3600 S   0.0  0.0   0:17.06 gdm
+171001 root      20   0  449216  34616  18160 S   0.0  0.0  10:02.23 X
+171076 root      20   0  379860   4928   3884 S   0.0  0.0   0:01.09 gdm-session-wor
+171108 root       0 -20       0      0      0 S   0.0  0.0   0:07.02 kworker/4:2H
+171367 flynnkm   20   0  113284   1204   1036 S   0.0  0.0   0:00.03 sh
+171434 nx        20   0  623204  73012   6196 S   0.0  0.0   0:03.44 nxserver.bin
+171597 root       0 -20  148544   4432   3300 S   0.0  0.0   0:00.71 nxexec
+171671 flynnkm    0 -20 2947040 199432  74748 S   0.0  0.1   2:42.36 nxnode.bin
+171711 flynnkm   20   0  673708   9480   6664 S   0.0  0.0   0:01.26 gnome-session-b
+171755 flynnkm   20   0 1261288   6136   4312 S   0.0  0.0   0:28.90 pulseaudio
+171773 flynnkm   20   0 1727172  25872  15964 S   0.0  0.0   0:02.89 nxclient.bin
+171844 flynnkm   20   0   58908    692    268 S   0.0  0.0   0:00.00 dbus-launch
+171847 flynnkm   20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+171848 flynnkm   20   0   78448   1260    776 S   0.0  0.0   0:00.00 dbus-daemon
+171849 flynnkm   20   0   79488   2692   1176 S   0.0  0.0   0:01.11 dbus-daemon
+171900 flynnkm   20   0  391912   4240   3496 S   0.0  0.0   0:00.05 imsettings-daem
+171921 flynnkm   20   0  388744   3976   3120 S   0.0  0.0   0:00.05 gvfsd
+171928 flynnkm   20   0  417824   3196   2612 S   0.0  0.0   0:00.00 gvfsd-fuse
+172089 flynnkm   20   0   72508    780      0 S   0.0  0.0   0:00.33 ssh-agent
+172162 gdm       20   0  744928  11064   6520 S   0.0  0.0   0:32.52 gnome-session-b
+172170 gdm       20   0   59040    964    464 S   0.0  0.0   0:00.00 dbus-launch
+172173 gdm       20   0   78912   2052   1184 S   0.0  0.0   0:00.08 dbus-daemon
+172222 gdm       20   0  346828   3652   3048 S   0.0  0.0   0:00.00 at-spi-bus-laun
+172231 gdm       20   0   78580   2424   1872 S   0.0  0.0   0:00.01 dbus-daemon
+172236 gdm       20   0  233124   3944   3180 S   0.0  0.0   0:00.01 at-spi2-registr
+172293 flynnkm   20   0  346816   3732   3076 S   0.0  0.0   0:00.02 at-spi-bus-laun
+172299 flynnkm   20   0   78580   2500   1872 S   0.0  0.0   0:00.30 dbus-daemon
+172304 flynnkm   20   0  233120   3924   3180 S   0.0  0.0   0:00.72 at-spi2-registr
+172314 gdm       20   0 5079284 132596  58968 S   0.0  0.0  48:05.59 gnome-shell
+172337 flynnkm   20   0  317396   3720   2844 S   0.0  0.0   0:00.05 gnome-keyring-d
+172363 flynnkm   20   0 5306572 219364  73604 S   0.0  0.1   9:02.03 gnome-shell
+172499 flynnkm   20   0  453128   5388   3352 S   0.0  0.0   0:02.24 ibus-daemon
+172503 flynnkm   20   0  375964   3552   2944 S   0.0  0.0   0:00.01 ibus-dconf
+172505 flynnkm   20   0  464812  13496   8716 S   0.0  0.0   0:00.61 ibus-x11
+172507 flynnkm   20   0  375964   3348   2776 S   0.0  0.0   0:00.04 ibus-portal
+172519 flynnkm   20   0  371456   3140   2564 S   0.0  0.0   0:00.00 xdg-permission-
+172524 flynnkm   20   0  650088  11736   8940 S   0.0  0.0   0:00.09 gnome-shell-cal
+172529 flynnkm   20   0 1444400  16372  11956 S   0.0  0.0   0:00.11 evolution-sourc
+172540 flynnkm   20   0  893328  25168  19132 S   0.0  0.0   0:00.08 goa-daemon
+172547 flynnkm   20   0  527716   8156   6120 S   0.0  0.0   0:05.08 goa-identity-se
+172563 flynnkm   20   0  187520   2880   2316 S   0.0  0.0   0:00.23 dconf-service
+172568 flynnkm   20   0  411664   7516   6108 S   0.0  0.0   0:00.43 mission-control
+172580 flynnkm   20   0  416208   5608   3884 S   0.0  0.0   0:08.50 gvfs-udisks2-vo
+172592 flynnkm   20   0  371692   3140   2572 S   0.0  0.0   0:00.02 gvfs-goa-volume
+172598 flynnkm   20   0  400688   3624   2812 S   0.0  0.0   0:00.02 gvfs-gphoto2-vo
+172605 flynnkm   20   0  478512   4376   3400 S   0.0  0.0   0:00.03 gvfs-afc-volume
+172613 flynnkm   20   0  391600   3384   2704 S   0.0  0.0   0:00.01 gvfs-mtp-volume
+172618 gdm       20   0  453100   5340   3312 S   0.0  0.0   4:45.52 ibus-daemon
+172625 gdm       20   0  375984   3452   2872 S   0.0  0.0   0:00.00 ibus-dconf
+172630 gdm       20   0  464832  13548   8652 S   0.0  0.0   0:00.06 ibus-x11
+172634 gdm       20   0  375964   3352   2780 S   0.0  0.0   0:00.00 ibus-portal
+172644 flynnkm   20   0  631692  14716   9508 S   0.0  0.0   0:00.70 gsd-power
+172652 flynnkm   20   0  439192   5520   4188 S   0.0  0.0   0:00.11 gsd-print-notif
+172653 flynnkm   20   0  538872   3272   2596 S   0.0  0.0   0:00.06 gsd-rfkill
+172655 flynnkm   20   0  374184   2968   2420 S   0.0  0.0   0:00.04 gsd-screensaver
+172657 flynnkm   20   0  558996   4204   3284 S   0.0  0.0   0:00.06 gsd-sharing
+172659 gdm       20   0  364704   2624   2160 S   0.0  0.0   0:00.00 xdg-permission-
+172662 flynnkm   20   0  455012   4728   3652 S   0.0  0.0   0:00.05 gsd-sound
+172669 flynnkm   20   0  615268  14900   9568 S   0.0  0.0   0:00.25 gsd-xsettings
+172673 flynnkm   20   0  549260  14080   9012 S   0.0  0.0   0:00.21 gsd-wacom
+172674 flynnkm   20   0  472472   5052   4172 S   0.0  0.0   0:00.07 gsd-smartcard
+172677 flynnkm   20   0  456816   3380   2764 S   0.0  0.0   0:00.05 gsd-account
+172693 flynnkm   20   0  376488   3244   2672 S   0.0  0.0   0:00.04 gsd-a11y-settin
+172694 flynnkm   20   0  464432  13304   8532 S   0.0  0.0   0:00.20 gsd-clipboard
+172698 flynnkm   20   0  714024  14340   9216 S   0.0  0.0   0:10.38 gsd-color
+172700 flynnkm   20   0  541552   8332   6288 S   0.0  0.0   0:00.05 gsd-datetime
+172702 flynnkm   20   0  463512   4216   3220 S   0.0  0.0   0:33.54 gsd-housekeepin
+172704 flynnkm   20   0  614228  13552   8700 S   0.0  0.0   0:00.18 gsd-keyboard
+172709 flynnkm   20   0 1143036  15404   9936 S   0.0  0.0   0:00.61 gsd-media-keys
+172714 flynnkm   20   0  376492   3236   2664 S   0.0  0.0   0:00.04 gsd-mouse
+172734 flynnkm   20   0  608628   7764   5740 S   0.0  0.0   0:00.02 gsd-printer
+172772 flynnkm   20   0 1314100  90188  21200 S   0.0  0.0   0:06.91 gnome-software
+172777 flynnkm   20   0  273064   3536   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+172779 flynnkm   39  19  558772  10572   7468 S   0.0  0.0   0:00.07 tracker-miner-a
+172780 flynnkm   39  19 1190164  12304   8244 S   0.0  0.0   0:00.54 tracker-miner-f
+172787 flynnkm   20   0  889740  29116  18036 S   0.0  0.0   0:01.21 nautilus-deskto
+172788 flynnkm   39  19  562016   9860   7128 S   0.0  0.0   0:00.04 tracker-miner-u
+172800 flynnkm   20   0  530256  16840  10880 S   0.0  0.0   0:00.15 abrt-applet
+172801 flynnkm   39  19  737364  12696   7900 S   0.0  0.0   0:05.98 tracker-extract
+172805 flynnkm   20   0  309868   9596   7148 S   0.0  0.0   0:00.04 seapplet
+172833 flynnkm   20   0  592392  22036   6080 S   0.0  0.0   0:03.42 tracker-store
+172836 flynnkm   20   0  464900   4744   3532 S   0.0  0.0   0:00.94 gvfsd-trash
+172860 flynnkm   20   0  916704  16268  12084 S   0.0  0.0   0:00.08 evolution-calen
+172912 flynnkm   20   0 1200644  15904  11768 S   0.0  0.0   0:00.11 evolution-calen
+172951 flynnkm   20   0  903428  15704  11620 S   0.0  0.0   0:00.06 evolution-addre
+172962 flynnkm   20   0 1185656  17264  12964 S   0.0  0.0   0:00.11 evolution-addre
+172978 flynnkm   20   0  973584  39408  19172 S   0.0  0.0   0:54.12 nautilus
+172999 flynnkm   20   0  302300   3440   2852 S   0.0  0.0   0:00.32 ibus-engine-sim
+173058 flynnkm   20   0  536092   3892   3028 S   0.0  0.0   0:00.02 gvfsd-burn
+173092 flynnkm   20   0  318012   3456   2676 S   0.0  0.0   0:00.31 gvfsd-metadata
+174007 root       0 -20       0      0      0 S   0.0  0.0   0:00.09 kworker/9:2H
+174261 gdm       20   0  615288  14876   9516 S   0.0  0.0   0:00.09 gsd-xsettings
+174267 gdm       20   0  376496   5336   2680 S   0.0  0.0   0:00.00 gsd-a11y-settin
+174273 gdm       20   0  464444  13352   8480 S   0.0  0.0   0:00.06 gsd-clipboard
+174277 gdm       20   0  664612  23940   9460 S   0.0  0.0  68:37.41 gsd-color
+174285 gdm       20   0  465508   7980   5988 S   0.0  0.0   0:00.01 gsd-datetime
+174287 gdm       20   0  380716   3108   2548 S   0.0  0.0   0:00.00 gsd-housekeepin
+174292 gdm       20   0  614236  13548   8636 S   0.0  0.0   0:00.17 gsd-keyboard
+174299 gdm       20   0 1011988  15644  10084 S   0.0  0.0   0:15.04 gsd-media-keys
+174303 gdm       20   0  300448   2852   2352 S   0.0  0.0   0:00.00 gsd-mouse
+174306 gdm       20   0  705484  14836   9468 S   0.0  0.0   0:18.88 gsd-power
+174314 gdm       20   0  317676   3100   2516 S   0.0  0.0   0:00.00 gsd-rfkill
+174315 gdm       20   0  374184   2968   2416 S   0.0  0.0   0:00.00 gsd-screensaver
+174319 gdm       20   0  411540   4164   3292 S   0.0  0.0   0:00.00 gsd-sharing
+174326 gdm       20   0  472484   5120   4200 S   0.0  0.0   0:00.03 gsd-smartcard
+174333 gdm       20   0  455156   5456   4256 S   0.0  0.0   0:00.00 gsd-sound
+174335 gdm       20   0  625368  14280   9112 S   0.0  0.0   0:00.09 gsd-wacom
+174339 gdm       20   0  363200   4536   3476 S   0.0  0.0   0:00.00 gsd-print-notif
+174354 gdm       20   0  187396   2800   2324 S   0.0  0.0   0:00.00 dconf-service
+174606 flynnkm   20   0  736316  27504  16804 S   0.0  0.0   0:03.26 gnome-terminal-
+174613 flynnkm   20   0    8536    728    600 S   0.0  0.0   0:00.00 gnome-pty-helpe
+174614 flynnkm   20   0  116860   3420   1676 S   0.0  0.0   0:00.12 bash
+174882 flynnkm   20   0  610496 104376  48564 S   0.0  0.0   0:46.94 gview.exe
+175193 root       0 -20       0      0      0 S   0.0  0.0   0:01.60 kworker/21:0H
+175413 root      20   0  601292  16280   4892 S   0.0  0.0 126:33.09 f2b/server
+175569 root       0 -20  148544   4396   3272 S   0.0  0.0   0:00.47 nxexec
+175647 gdm        0 -20 1759772  56408  12608 S   0.0  0.0   6:55.43 nxnode.bin
+176363 gdm       20   0  302168   3296   2736 S   0.0  0.0   0:00.00 ibus-engine-sim
+176603 root       0 -20       0      0      0 S   0.0  0.0   0:01.98 kworker/9:1H
+177217 root       0 -20       0      0      0 S   0.0  0.0   0:02.73 kworker/10:1H
+177335 njukikk   20   0  599784   4428   3296 S   0.0  0.0   2:16.49 ibus-daemon
+177346 njukikk   20   0  302216   3480   2896 S   0.0  0.0   0:00.00 ibus-dconf
+177349 njukikk   20   0  464540  13308   8652 S   0.0  0.0   0:00.07 ibus-x11
+177358 njukikk   20   0  228500   3072   2552 S   0.0  0.0   0:00.00 ibus-portal
+177843 fitzgev   20   0 2776612  91756  58108 S   0.0  0.0   0:16.00 Web Content
+177866 hartlecs  20   0  292160   3608   3004 S   0.0  0.0   0:00.01 ibus-daemon
+178708 root      20   0  167584   5668   4280 S   0.0  0.0   0:00.62 sshd
+178738 flynnkm   20   0  116860   3424   1688 S   0.0  0.0   0:00.30 bash
+178838 sabbirm   20   0  179976   3340   1796 S   0.0  0.0   0:03.61 sshd
+178855 sabbirm   20   0  113284   1204   1036 S   0.0  0.0   0:00.02 sh
+178889 nx        20   0  622656  72488   6188 S   0.0  0.0   0:01.43 nxserver.bin
+179025 cannizag  20   0  449680  20428   4268 S   0.0  0.0 380:29.51 python
+179209 root       0 -20  148544   4400   3272 S   0.0  0.0   0:00.73 nxexec
+179256 sabbirm    0 -20 3409272 267124  71492 S   0.0  0.1   2:28.52 nxnode.bin
+179364 sabbirm   20   0  671588   9300   6588 S   0.0  0.0   0:00.53 gnome-session-b
+179423 sabbirm   20   0 1727168  25812  15952 S   0.0  0.0   0:01.41 nxclient.bin
+179504 sabbirm   20   0   58908    692    268 S   0.0  0.0   0:00.00 dbus-launch
+179510 sabbirm   20   0   78448   1268    776 S   0.0  0.0   0:00.01 dbus-daemon
+179528 sabbirm   20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+179546 sabbirm   20   0   79668   2808   1176 S   0.0  0.0   0:00.71 dbus-daemon
+179623 sabbirm   20   0  391920   4312   3520 S   0.0  0.0   0:00.04 imsettings-daem
+179627 sabbirm   20   0  388732   3992   3124 S   0.0  0.0   0:00.05 gvfsd
+179632 sabbirm   20   0  417824   3196   2612 S   0.0  0.0   0:00.00 gvfsd-fuse
+179726 sabbirm   20   0   72508    780      0 S   0.0  0.0   0:00.05 ssh-agent
+179804 sabbirm    0 -20  297536  29104   4508 S   0.0  0.0   0:16.88 nxcodec.bin
+179861 sabbirm   20   0  346820   3732   3080 S   0.0  0.0   0:00.02 at-spi-bus-laun
+179867 sabbirm   20   0   78580   2472   1868 S   0.0  0.0   0:00.08 dbus-daemon
+179870 sabbirm   20   0  233120   3932   3184 S   0.0  0.0   0:00.15 at-spi2-registr
+179896 sabbirm   20   0  317396   3716   2844 S   0.0  0.0   0:00.04 gnome-keyring-d
+179908 sabbirm   20   0 5470944 302352  80272 S   0.0  0.1   1:25.71 gnome-shell
+180006 sabbirm   20   0  453132   5384   3352 S   0.0  0.0   0:00.46 ibus-daemon
+180010 sabbirm   20   0  375968   3548   2944 S   0.0  0.0   0:00.01 ibus-dconf
+180012 sabbirm   20   0  464808  13480   8704 S   0.0  0.0   0:00.10 ibus-x11
+180019 sabbirm   20   0  375964   3348   2776 S   0.0  0.0   0:00.04 ibus-portal
+180026 sabbirm   20   0  371456   3144   2564 S   0.0  0.0   0:00.01 xdg-permission-
+180033 sabbirm   20   0  650092  11728   8940 S   0.0  0.0   0:00.07 gnome-shell-cal
+180040 sabbirm   20   0 1444404  16372  11960 S   0.0  0.0   0:00.10 evolution-sourc
+180048 sabbirm   20   0  893332  25172  19140 S   0.0  0.0   0:00.07 goa-daemon
+180055 sabbirm   20   0  527716   8036   6048 S   0.0  0.0   0:00.60 goa-identity-se
+180066 sabbirm   20   0  187524   2916   2316 S   0.0  0.0   0:00.02 dconf-service
+180068 sabbirm   20   0  411800   7488   6116 S   0.0  0.0   0:00.19 mission-control
+180088 sabbirm   20   0  415928   5328   3884 S   0.0  0.0   0:01.99 gvfs-udisks2-vo
+180100 sabbirm   20   0  371556   3140   2576 S   0.0  0.0   0:00.00 gvfs-goa-volume
+180107 sabbirm   20   0  400688   3624   2812 S   0.0  0.0   0:00.01 gvfs-gphoto2-vo
+180114 sabbirm   20   0  478524   4264   3332 S   0.0  0.0   0:00.01 gvfs-afc-volume
+180123 sabbirm   20   0  391600   3380   2704 S   0.0  0.0   0:00.01 gvfs-mtp-volume
+180148 sabbirm   20   0  631684  14664   9416 S   0.0  0.0   0:00.26 gsd-power
+180150 sabbirm   20   0  439192   5516   4184 S   0.0  0.0   0:00.03 gsd-print-notif
+180151 sabbirm   20   0  538872   3264   2592 S   0.0  0.0   0:00.02 gsd-rfkill
+180152 sabbirm   20   0  374184   2832   2300 S   0.0  0.0   0:00.01 gsd-screensaver
+180153 sabbirm   20   0  559000   4208   3288 S   0.0  0.0   0:00.02 gsd-sharing
+180156 sabbirm   20   0  455016   4728   3656 S   0.0  0.0   0:00.03 gsd-sound
+180161 sabbirm   20   0  615276  14892   9560 S   0.0  0.0   0:00.14 gsd-xsettings
+180164 sabbirm   20   0  549252  14060   9000 S   0.0  0.0   0:00.12 gsd-wacom
+180165 sabbirm   20   0  472480   5064   4176 S   0.0  0.0   0:00.04 gsd-smartcard
+180168 sabbirm   20   0  456820   3376   2764 S   0.0  0.0   0:00.02 gsd-account
+180183 sabbirm   20   0  376492   3252   2672 S   0.0  0.0   0:00.01 gsd-a11y-settin
+180184 sabbirm   20   0  464420  13288   8516 S   0.0  0.0   0:00.10 gsd-clipboard
+180185 sabbirm   20   0  779588  14600   9364 S   0.0  0.0   0:01.27 gsd-color
+180188 sabbirm   20   0  541556   8376   6292 S   0.0  0.0   0:00.02 gsd-datetime
+180192 sabbirm   20   0  463516   4184   3216 S   0.0  0.0   0:06.95 gsd-housekeepin
+180193 sabbirm   20   0  614128  13696   8684 S   0.0  0.0   0:00.11 gsd-keyboard
+180195 sabbirm   20   0 1069288  15348   9920 S   0.0  0.0   0:00.26 gsd-media-keys
+180199 sabbirm   20   0  376496   3336   2648 S   0.0  0.0   0:00.02 gsd-mouse
+180219 sabbirm   20   0  608628   7524   5528 S   0.0  0.0   0:00.01 gsd-printer
+180250 sabbirm   20   0 1379596  83508  21184 S   0.0  0.0   0:03.27 gnome-software
+180254 sabbirm   20   0  273064   3540   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+180255 sabbirm   39  19  632508  10708   7504 S   0.0  0.0   0:00.10 tracker-miner-a
+180256 sabbirm   39  19  649328  12012   8260 S   0.0  0.0   0:00.27 tracker-miner-f
+180262 sabbirm   20   0  963988  29288  17852 S   0.0  0.0   0:00.73 nautilus-deskto
+180263 sabbirm   39  19  562016   9864   7132 S   0.0  0.0   0:00.05 tracker-miner-u
+180279 sabbirm   20   0  530252  16824  10868 S   0.0  0.0   0:00.14 abrt-applet
+180283 sabbirm   39  19  660904  11460   8004 S   0.0  0.0   0:00.24 tracker-extract
+180284 sabbirm   20   0  309872   9600   7148 S   0.0  0.0   0:00.04 seapplet
+180333 sabbirm   20   0  302300   3436   2852 S   0.0  0.0   0:00.06 ibus-engine-sim
+180337 sabbirm   20   0  590464  12484   5920 S   0.0  0.0   0:00.24 tracker-store
+180349 sabbirm   20   0  916708  16268  12088 S   0.0  0.0   0:00.07 evolution-calen
+180358 sabbirm   20   0  538632   4764   3516 S   0.0  0.0   0:00.21 gvfsd-trash
+180394 sabbirm   20   0 1135112  15892  11768 S   0.0  0.0   0:00.12 evolution-calen
+180439 sabbirm   20   0  903432  15716  11624 S   0.0  0.0   0:00.07 evolution-addre
+180456 sabbirm   20   0 1185660  17256  12960 S   0.0  0.0   0:00.10 evolution-addre
+180490 sabbirm   20   0  317860   3312   2664 S   0.0  0.0   0:00.00 gvfsd-metadata
+180508 sabbirm   20   0  536092   3892   3028 S   0.0  0.0   0:00.02 gvfsd-burn
+181174 sabbirm   20   0  748016  29744  17564 S   0.0  0.0   0:05.80 gnome-terminal-
+181181 sabbirm   20   0    8536    728    600 S   0.0  0.0   0:00.01 gnome-pty-helpe
+181182 sabbirm   20   0  117092   3744   1812 S   0.0  0.0   0:00.44 bash
+181537 njukikk   20   0  304444   3608   3000 S   0.0  0.0   0:00.02 ibus-daemon
+181609 root       0 -20       0      0      0 S   0.0  0.0   0:02.04 kworker/15:2H
+182999 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/14:2H
+183813 root      20   0       0      0      0 S   0.0  0.0   0:00.10 kworker/15:1
+184714 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/9:0
+189771 root      20   0 5330428 119204   3864 S   0.0  0.0 286:21.07 lt-pbs_server
+190429 fredermk  20   0  453268   5768   3360 S   0.0  0.0   6:04.48 ibus-daemon
+190668 root      20   0       0      0      0 S   0.0  0.0   0:01.58 kworker/5:0
+191197 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/16:2H
+194295 sabbirm   20   0  116992   3540   1708 S   0.0  0.0   0:00.12 bash
+194531 sabbirm   20   0   45640   3060   2084 S   0.0  0.0   0:00.01 qsub
+194538 sabbirm   20   0   45640    984      0 S   0.0  0.0   0:00.00 qsub
+194539 sabbirm   20   0   46444   1984    204 S   0.0  0.0   0:00.00 qsub
+194804 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/7:1
+195085 xus2      20   0  304444   5640   3000 S   0.0  0.0   0:00.02 ibus-daemon
+195626 root      20   0  348108   4588   3468 S   0.0  0.0   0:05.99 gdm-session-wor
+196858 root      20   0  417456   5820   4352 S   0.0  0.0   0:00.04 gdm-session-wor
+197239 holtje4   20   0  526832   5472   3368 S   0.0  0.0   1:56.46 ibus-daemon
+198565 root      20   0       0      0      0 S   0.0  0.0   0:06.49 kworker/19:2
+198667 root      20   0       0      0      0 S   0.0  0.0   0:00.74 kworker/3:2
+199374 tiltonns  20   0   45644    992      0 S   0.0  0.0   0:00.00 qsub
+200597 root      20   0  128004   1232    632 S   0.0  0.0   2:13.22 screen
+200598 root      20   0  117248   3876   1792 S   0.0  0.0   0:00.23 bash
+200713 root      20   0  179832   5896   4496 S   0.0  0.0   0:00.60 sshd
+200812 dunnnm2   20   0  180972   3832   1208 S   0.0  0.0   0:02.64 sshd
+200818 dunnnm2   20   0  116992   3712   1828 S   0.0  0.0   0:02.78 bash
+200960 root       0 -20       0      0      0 S   0.0  0.0   0:09.16 kworker/18:1H
+200999 root      20   0  108100    668    556 S   0.0  0.0   2:03.84 tail
+201294 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/12:2
+201787 root      20   0       0      0      0 S   0.0  0.0   0:00.26 kworker/11:2
+202118 root      20   0       0      0      0 S   0.0  0.0   0:00.16 kworker/17:0
+202173 kassah    20   0  113284   1204   1032 S   0.0  0.0   0:00.03 sh
+202243 nx        20   0  623336  73132   6200 S   0.0  0.0   0:01.21 nxserver.bin
+202338 root       0 -20  148544   4408   3276 S   0.0  0.0   0:00.75 nxexec
+202382 kassah     0 -20 3526980 256336  72992 S   0.0  0.1   2:43.30 nxnode.bin
+202479 kassah    20   0  673708   9432   6656 S   0.0  0.0   0:00.46 gnome-session-b
+202523 kassah    20   0 1523440   6032   4244 S   0.0  0.0   1:33.71 pulseaudio
+202536 kassah    20   0 1727300  25924  15948 S   0.0  0.0   0:01.33 nxclient.bin
+202603 kassah    20   0   58908    692    268 S   0.0  0.0   0:00.00 dbus-launch
+202609 kassah    20   0   78448   1268    776 S   0.0  0.0   0:00.01 dbus-daemon
+202637 kassah    20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+202638 kassah    20   0   79524   2736   1176 S   0.0  0.0   0:01.74 dbus-daemon
+202740 kassah    20   0  391920   4316   3520 S   0.0  0.0   0:00.04 imsettings-daem
+202745 kassah    20   0  388732   3980   3124 S   0.0  0.0   0:00.05 gvfsd
+202750 kassah    20   0  417824   3196   2612 S   0.0  0.0   0:00.00 gvfsd-fuse
+202859 kassah    20   0   72508    784      0 S   0.0  0.0   0:00.03 ssh-agent
+202969 kassah    20   0  346820   3732   3076 S   0.0  0.0   0:00.02 at-spi-bus-laun
+202975 kassah    20   0   78576   2488   1872 S   0.0  0.0   0:00.14 dbus-daemon
+202979 kassah    20   0  233116   3924   3176 S   0.0  0.0   0:00.24 at-spi2-registr
+203011 kassah    20   0  317396   3728   2848 S   0.0  0.0   0:00.05 gnome-keyring-d
+203026 kassah    20   0 5258320 237276  82284 S   0.0  0.1   2:38.64 gnome-shell
+203113 kassah    20   0  453128   5404   3352 S   0.0  0.0   0:00.21 ibus-daemon
+203117 kassah    20   0  375968   3548   2944 S   0.0  0.0   0:00.02 ibus-dconf
+203119 kassah    20   0  464808  13616   8748 S   0.0  0.0   0:00.11 ibus-x11
+203121 kassah    20   0  375964   3348   2776 S   0.0  0.0   0:00.04 ibus-portal
+203133 kassah    20   0  371456   3140   2564 S   0.0  0.0   0:00.00 xdg-permission-
+203136 kassah    20   0  650092  11732   8936 S   0.0  0.0   0:00.07 gnome-shell-cal
+203146 kassah    20   0 1444404  16348  11936 S   0.0  0.0   0:00.13 evolution-sourc
+203154 kassah    20   0  893336  25172  19132 S   0.0  0.0   0:00.08 goa-daemon
+203161 kassah    20   0  527716   8036   6048 S   0.0  0.0   0:00.42 goa-identity-se
+203175 kassah    20   0  187528   2912   2316 S   0.0  0.0   0:00.23 dconf-service
+203183 kassah    20   0  411668   7484   6112 S   0.0  0.0   0:00.15 mission-control
+203195 kassah    20   0  563628   5776   4024 S   0.0  0.0   0:01.21 gvfs-udisks2-vo
+203220 kassah    20   0  371556   3140   2572 S   0.0  0.0   0:00.01 gvfs-goa-volume
+203232 kassah    20   0  400688   3624   2812 S   0.0  0.0   0:00.02 gvfs-gphoto2-vo
+203241 kassah    20   0  478520   4264   3332 S   0.0  0.0   0:00.02 gvfs-afc-volume
+203251 kassah    20   0  391600   3380   2704 S   0.0  0.0   0:00.02 gvfs-mtp-volume
+203283 kassah    20   0  631728  14708   9524 S   0.0  0.0   0:00.23 gsd-power
+203285 kassah    20   0  439192   5524   4188 S   0.0  0.0   0:00.03 gsd-print-notif
+203286 kassah    20   0  538872   3264   2596 S   0.0  0.0   0:00.02 gsd-rfkill
+203287 kassah    20   0  374184   2832   2300 S   0.0  0.0   0:00.02 gsd-screensaver
+203288 kassah    20   0  559000   4468   3504 S   0.0  0.0   0:00.03 gsd-sharing
+203290 kassah    20   0  455016   4728   3652 S   0.0  0.0   0:00.03 gsd-sound
+203295 kassah    20   0  615276  15008   9624 S   0.0  0.0   0:00.16 gsd-xsettings
+203297 kassah    20   0  549252  14200   9048 S   0.0  0.0   0:00.14 gsd-wacom
+203299 kassah    20   0  472480   5064   4176 S   0.0  0.0   0:00.06 gsd-smartcard
+203303 kassah    20   0  456820   3380   2764 S   0.0  0.0   0:00.02 gsd-account
+203317 kassah    20   0  376492   3248   2672 S   0.0  0.0   0:00.01 gsd-a11y-settin
+203318 kassah    20   0  464420  13420   8564 S   0.0  0.0   0:00.11 gsd-clipboard
+203319 kassah    20   0  714028  14428   9232 S   0.0  0.0   0:00.91 gsd-color
+203320 kassah    20   0  541556   8344   6300 S   0.0  0.0   0:00.02 gsd-datetime
+203322 kassah    20   0  463516   4084   3164 S   0.0  0.0   0:04.50 gsd-housekeepin
+203324 kassah    20   0  614176  13476   8628 S   0.0  0.0   0:00.13 gsd-keyboard
+203326 kassah    20   0 1069292  15400   9968 S   0.0  0.0   0:00.22 gsd-media-keys
+203332 kassah    20   0  376496   3236   2664 S   0.0  0.0   0:00.02 gsd-mouse
+203356 kassah    20   0  608628   7768   5748 S   0.0  0.0   0:00.00 gsd-printer
+203389 kassah    20   0 1445156  83336  21168 S   0.0  0.0   0:02.71 gnome-software
+203394 kassah    20   0  273064   3536   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+203395 kassah    39  19  632516  10672   7484 S   0.0  0.0   0:01.89 tracker-miner-a
+203400 kassah    39  19 1258564  20936   8420 S   0.0  0.0   0:34.54 tracker-miner-f
+203408 kassah    20   0 1288172  31120  18256 S   0.0  0.0   0:02.71 nautilus-deskto
+203410 kassah    39  19  562016   9852   7128 S   0.0  0.0   0:00.04 tracker-miner-u
+203426 kassah    20   0  530248  16812  10860 S   0.0  0.0   0:00.12 abrt-applet
+203428 kassah    39  19 1423876  39160  15120 S   0.0  0.0   2:37.24 tracker-extract
+203430 kassah    20   0  309872   9592   7144 S   0.0  0.0   0:00.04 seapplet
+203463 kassah    20   0  593896  48492   6388 S   0.0  0.0   1:20.07 tracker-store
+203464 kassah    20   0  302300   3436   2852 S   0.0  0.0   0:00.01 ibus-engine-sim
+203467 kassah    20   0  916712  16264  12084 S   0.0  0.0   0:00.04 evolution-calen
+203486 kassah    20   0  465024   4916   3556 S   0.0  0.0   0:01.15 gvfsd-trash
+203517 kassah    20   0 1200648  15952  11796 S   0.0  0.0   0:00.08 evolution-calen
+203572 kassah    20   0  903432  15700  11608 S   0.0  0.0   0:00.07 evolution-addre
+203590 kassah    20   0 1185660  17260  12964 S   0.0  0.0   0:00.09 evolution-addre
+203611 kassah    20   0  318040   3428   2688 S   0.0  0.0   0:00.48 gvfsd-metadata
+203683 kassah    20   0  536092   3892   3032 S   0.0  0.0   0:00.02 gvfsd-burn
+203710 kassah    20   0 1254512  42976  19236 S   0.0  0.0   1:01.51 nautilus
+203735 root       0 -20       0      0      0 S   0.0  0.0   0:05.19 kworker/2:1H
+204213 root      20   0       0      0      0 S   0.0  0.0   0:00.20 kworker/16:2
+204725 root      20   0  167584   5668   4280 S   0.0  0.0   0:00.60 sshd
+204834 kassah    20   0  180412   3752   1824 S   0.0  0.0   0:40.75 sshd
+204933 kassah    20   0  113284   1204   1036 S   0.0  0.0   0:00.03 sh
+204987 nx        20   0  696516  72716   6192 S   0.0  0.0   0:01.09 nxserver.bin
+205029 root       0 -20  148544   4392   3272 S   0.0  0.0   0:00.44 nxexec
+205035 kassah     0 -20  668280  46468  10588 S   0.0  0.0   0:00.64 nxnode.bin
+205099 kassah     0 -20  315824  31960   4936 S   0.0  0.0   0:27.33 nxcodec.bin
+205252 root      20   0  167584   5768   4376 S   0.0  0.0   0:00.60 sshd
+205337 dunnnm2   20   0  179832   3204   1748 S   0.0  0.0   0:00.06 sshd
+205349 dunnnm2   20   0   72288   2888   2108 S   0.0  0.0   0:00.04 sftp-server
+205509 kassah    20   0  453132   5400   3360 S   0.0  0.0   1:53.07 ibus-daemon
+205682 root      20   0       0      0      0 S   0.0  0.0   0:06.01 kworker/12:0
+206753 panw8     20   0 1429464  72464  45240 S   0.0  0.0   0:00.51 gnome-control-c
+208134 fitzgev   20   0 2793660 107088  49788 S   0.0  0.0   1:10.83 Web Content
+208367 root       0 -20       0      0      0 S   0.0  0.0   0:06.14 kworker/12:0H
+210315 root      20   0 1901332  99112  25748 S   0.0  0.0 151:33.36 filebeat
+210333 cannizag  20   0 1406120  35968   1904 S   0.0  0.0  98:09.53 python
+210669 root       0 -20       0      0      0 S   0.0  0.0   0:03.05 kworker/13:1H
+212133 root       0 -20       0      0      0 S   0.0  0.0   0:04.87 kworker/12:1H
+212928 root       0 -20       0      0      0 S   0.0  0.0   0:01.22 kworker/2:0H
+213133 cannizag  20   0 1546576  37220   1908 S   0.0  0.0  99:42.61 python
+214076 root       0 -20       0      0      0 S   0.0  0.0   0:00.40 kworker/6:1H
+214122 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/22:2H
+215345 xus2      20   0  304444   3608   3000 S   0.0  0.0   0:00.02 ibus-daemon
+215598 root      20   0  167584   5764   4376 S   0.0  0.0   0:00.58 sshd
+215652 dunnnm2   20   0  179832   3208   1756 S   0.0  0.0   0:00.04 sshd
+215662 dunnnm2   20   0   72288   2884   2108 S   0.0  0.0   0:00.04 sftp-server
+215720 root      20   0  348108   4584   3464 S   0.0  0.0   0:07.47 gdm-session-wor
+215934 root      20   0       0      0      0 S   0.0  0.0   0:01.38 kworker/u497:4
+216245 root      20   0       0      0      0 S   0.0  0.0   0:00.16 kworker/15:2
+216812 root      20   0       0      0      0 S   0.0  0.0   0:00.54 kworker/11:1
+218721 farleik   20   0  719236  24568  15672 S   0.0  0.0   0:11.30 file-roller
+219372 hagenjd2  20   0  960616  31492  18300 S   0.0  0.0   0:00.98 nautilus
+219546 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/19:1H
+220313 root      20   0       0      0      0 S   0.0  0.0   0:00.49 kworker/4:1
+220961 hartlecs  20   0  428528   5412   3360 S   0.0  0.0   5:15.76 ibus-daemon
+221291 root      20   0       0      0      0 S   0.0  0.0   0:00.24 kworker/10:0
+221488 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/0:1
+222460 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/6:1
+223248 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/17:1
+223276 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/18:0H
+223682 postfix   20   0  102092   4092   3060 S   0.0  0.0   0:00.17 pickup
+225530 root      20   0  348108   4580   3488 S   0.0  0.0   0:04.27 gdm-session-wor
+226324 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/4:0
+229526 fitzgev   20   0 2673068  39892  24912 S   0.0  0.0   0:00.72 Web Content
+232354 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/19:1
+233368 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/8:2
+233511 root      20   0       0      0      0 S   0.0  0.0   0:00.08 kworker/18:1
+233512 root      20   0       0      0      0 S   0.0  0.0   0:01.00 kworker/20:2
+233622 fitzgev   20   0  464752   4504   3540 S   0.0  0.0   0:00.05 gvfsd-recent
+233782 fitzgev   20   0  542876   4540   3576 S   0.0  0.0   0:00.05 gvfsd-network
+233798 fitzgev   20   0  493664   4644   3620 S   0.0  0.0   0:00.23 gvfsd-dnssd
+233986 root       0 -20       0      0      0 S   0.0  0.0   0:04.63 kworker/5:1H
+234326 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/21:0
+235808 root      20   0       0      0      0 S   0.0  0.0   0:00.36 kworker/2:2
+236936 root      20   0  167584   5792   4404 S   0.0  0.0   0:00.56 sshd
+237194 fitzgev   20   0  180280   3760   1828 S   0.0  0.0   0:05.66 sshd
+237207 fitzgev   20   0  113284   1200   1032 S   0.0  0.0   0:00.03 sh
+237272 nx        20   0  696520  72724   6192 S   0.0  0.0   0:00.89 nxserver.bin
+237426 root       0 -20  148544   4416   3296 S   0.0  0.0   0:00.44 nxexec
+237432 fitzgev    0 -20  668276  46468  10588 S   0.0  0.0   0:00.47 nxnode.bin
+237501 fitzgev    0 -20  246976  19448   3196 S   0.0  0.0   0:27.19 nxcodec.bin
+237619 root      20   0       0      0      0 S   0.0  0.0   0:01.06 kworker/u497:6
+237811 xus2      20   0  585948   5852   3748 S   0.0  0.0   0:30.61 sd_espeak
+237818 xus2      20   0  123680   2484   1744 S   0.0  0.0   0:00.00 sd_dummy
+237820 xus2      20   0   94268    584    324 S   0.0  0.0   0:00.00 speech-dispatch
+239664 root       0 -20       0      0      0 S   0.0  0.0   0:04.21 kworker/10:0H
+239763 root      20   0       0      0      0 S   0.0  0.0   0:00.10 kworker/5:2
+239817 root       0 -20       0      0      0 S   0.0  0.0   0:00.12 kworker/5:0H
+240698 fitzgev   20   0  746000  28052  17388 S   0.0  0.0   0:03.27 gnome-terminal-
+240705 fitzgev   20   0    8536    712    584 S   0.0  0.0   0:00.00 gnome-pty-helpe
+240706 fitzgev   20   0  116860   3388   1676 S   0.0  0.0   0:00.09 bash
+240779 root       0 -20       0      0      0 S   0.0  0.0   0:06.55 kworker/20:2H
+240785 root       0 -20       0      0      0 S   0.0  0.0   0:06.48 kworker/17:2H
+240805 root      20   0       0      0      0 S   0.0  0.0   0:01.16 kworker/u497:9
+240957 fitzgev   20   0   44872   2636   2056 S   0.0  0.0   0:00.02 qsub
+241040 fitzgev   20   0   44872    584      0 S   0.0  0.0   0:00.25 qsub
+241963 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/11:0H
+242404 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/23:2
+242715 root      20   0       0      0      0 S   0.0  0.0   0:00.03 kworker/u498:0
+242914 root       0 -20       0      0      0 S   0.0  0.0   0:00.26 kworker/8:1H
+243140 root      20   0       0      0      0 S   0.0  0.0   0:00.62 kworker/u497:1
+243432 root      20   0  348108   4592   3488 S   0.0  0.0   0:02.54 gdm-session-wor
+243468 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/18:0
+243502 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/10:1
+243781 root      20   0       0      0      0 S   0.0  0.0   0:00.01 kworker/22:2
+244362 root      20   0       0      0      0 S   0.0  0.0   0:00.26 kworker/u496:0
+244394 root      20   0  219792   4576   2736 S   0.0  0.0   5:39.30 trqauthd
+244440 root      20   0       0      0      0 S   0.0  0.0   0:00.05 kworker/2:0
+244502 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/20:1
+244635 root      20   0  186228   6144   4544 S   0.0  0.0   0:00.59 sshd
+244672 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/3:1
+244679 vishwak   20   0  186228   2780   1160 S   0.0  0.0   0:00.51 sshd
+244681 vishwak   20   0  117032   3776   1840 S   0.0  0.0   0:00.68 bash
+245162 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/14:2
+245556 root      20   0       0      0      0 S   0.0  0.0   0:00.18 kworker/u497:0
+245595 root      20   0       0      0      0 S   0.0  0.0   0:00.05 kworker/u498:2
+245827 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/13:2
+245828 root      20   0       0      0      0 S   0.0  0.0   0:00.02 kworker/1:0
+246022 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/22:1
+246098 hagenjd2  20   0  113284   1200   1032 S   0.0  0.0   0:00.03 sh
+246165 nx        20   0  697192  73376   6188 S   0.0  0.0   0:10.96 nxserver.bin
+246345 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/14:0
+246383 colbrubw  20   0  526856   5484   3364 S   0.0  0.0   2:36.84 ibus-daemon
+246454 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/21:1
+246461 root      20   0       0      0      0 S   0.0  0.0   0:00.14 kworker/u497:3
+246502 root       0 -20  148544   4432   3300 S   0.0  0.0   0:00.68 nxexec
+246527 root      20   0       0      0      0 S   0.0  0.0   0:00.10 kworker/u496:2
+246571 hagenjd2   0 -20 3138496 285080  88708 S   0.0  0.1  35:49.39 nxnode.bin
+246658 root      20   0  223720   4336   2676 S   0.0  0.0   0:00.71 crond
+246692 hagenjd2  20   0  671584   9352   6592 S   0.0  0.0   0:03.70 gnome-session-b
+246721 brudzimr  20   0  119392   1632   1184 S   0.0  0.0   0:02.07 csh
+246745 hagenjd2  20   0 1261276   6092   4264 S   0.0  0.0  10:02.12 pulseaudio
+246750 hagenjd2  20   0 1793432  27192  16144 S   0.0  0.0   0:09.65 nxclient.bin
+246860 hagenjd2  20   0   58908    952    484 S   0.0  0.0   0:00.00 dbus-launch
+246863 hagenjd2  20   0   79756   2980   1176 S   0.0  0.0   0:01.41 dbus-daemon
+246930 hagenjd2  20   0  391912   4316   3520 S   0.0  0.0   0:00.03 imsettings-daem
+246935 hagenjd2  20   0  388760   3984   3124 S   0.0  0.0   0:00.07 gvfsd
+246944 hagenjd2  20   0  417824   3196   2612 S   0.0  0.0   0:00.00 gvfsd-fuse
+247074 hagenjd2  20   0   72508    780      0 S   0.0  0.0   0:01.36 ssh-agent
+247367 hagenjd2  20   0  346816   5768   3076 S   0.0  0.0   0:00.02 at-spi-bus-laun
+247373 hagenjd2  20   0   78580   2524   1872 S   0.0  0.0   0:00.55 dbus-daemon
+247376 hagenjd2  20   0  233248   4188   3388 S   0.0  0.0   0:01.06 at-spi2-registr
+247417 hagenjd2  20   0  317420   3968   3060 S   0.0  0.0   0:00.14 gnome-keyring-d
+247427 hagenjd2  20   0 5548528 332700  95892 S   0.0  0.1  36:31.53 gnome-shell
+247512 hagenjd2  20   0  453100   7492   3364 S   0.0  0.0   0:08.76 ibus-daemon
+247518 hagenjd2  20   0  375964   3548   2944 S   0.0  0.0   0:00.00 ibus-dconf
+247520 hagenjd2  20   0  464808  13484   8700 S   0.0  0.0   0:01.25 ibus-x11
+247522 hagenjd2  20   0  375964   3348   2776 S   0.0  0.0   0:00.06 ibus-portal
+247533 hagenjd2  20   0  371456   3140   2564 S   0.0  0.0   0:00.00 xdg-permission-
+247536 hagenjd2  20   0  650084  11736   8936 S   0.0  0.0   0:00.28 gnome-shell-cal
+247543 hagenjd2  20   0 1444432  16284  11956 S   0.0  0.0   0:00.15 evolution-sourc
+247551 hagenjd2  20   0  893328  25168  19132 S   0.0  0.0   0:00.08 goa-daemon
+247558 hagenjd2  20   0  527716  10264   6184 S   0.0  0.0   0:18.13 goa-identity-se
+247571 hagenjd2  20   0  411664   7684   6232 S   0.0  0.0   0:01.78 mission-control
+247589 hagenjd2  20   0  417236   8956   4084 S   0.0  0.0   0:34.83 gvfs-udisks2-vo
+247604 hagenjd2  20   0  371688   5180   2576 S   0.0  0.0   0:00.02 gvfs-goa-volume
+247610 hagenjd2  20   0  400688   5660   2812 S   0.0  0.0   0:00.02 gvfs-gphoto2-vo
+247617 hagenjd2  20   0  478512   6416   3400 S   0.0  0.0   0:00.04 gvfs-afc-volume
+247624 hagenjd2  20   0  391600   3380   2704 S   0.0  0.0   0:00.02 gvfs-mtp-volume
+247633 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/16:0
+247760 hagenjd2  20   0  631704  14856   9544 S   0.0  0.0   0:02.29 gsd-power
+247762 hagenjd2  20   0  439192   5516   4184 S   0.0  0.0   0:00.27 gsd-print-notif
+247763 hagenjd2  20   0  538872   5304   2596 S   0.0  0.0   0:00.02 gsd-rfkill
+247764 hagenjd2  20   0  374184   2832   2300 S   0.0  0.0   0:00.01 gsd-screensaver
+247765 hagenjd2  20   0  558996   6248   3288 S   0.0  0.0   0:00.02 gsd-sharing
+247770 hagenjd2  20   0  455012   4728   3652 S   0.0  0.0   0:00.02 gsd-sound
+247773 hagenjd2  20   0  615256  15060   9632 S   0.0  0.0   0:00.15 gsd-xsettings
+247777 hagenjd2  20   0  549252  14048   8988 S   0.0  0.0   0:00.12 gsd-wacom
+247778 hagenjd2  20   0  472472   5072   4188 S   0.0  0.0   0:00.05 gsd-smartcard
+247780 hagenjd2  20   0  456816   5436   2764 S   0.0  0.0   0:00.13 gsd-account
+247798 hagenjd2  20   0  376488   3244   2672 S   0.0  0.0   0:00.00 gsd-a11y-settin
+247801 hagenjd2  20   0  464428  15316   8508 S   0.0  0.0   0:00.10 gsd-clipboard
+247804 hagenjd2  20   0  779816  17044   9520 S   0.0  0.0   1:20.40 gsd-color
+247816 hagenjd2  20   0  541552   8336   6292 S   0.0  0.0   0:00.01 gsd-datetime
+247817 hagenjd2  20   0  463564   4352   3336 S   0.0  0.0   2:15.20 gsd-housekeepin
+247818 hagenjd2  20   0  614124  13476   8600 S   0.0  0.0   0:00.11 gsd-keyboard
+247820 hagenjd2  20   0 1077488  15696  10188 S   0.0  0.0   0:01.89 gsd-media-keys
+247822 hagenjd2  20   0  376492   3232   2660 S   0.0  0.0   0:00.01 gsd-mouse
+247841 hagenjd2  20   0  608628   7776   5740 S   0.0  0.0   0:00.06 gsd-printer
+247873 hagenjd2  20   0 1390728  96972  22912 S   0.0  0.0   0:21.37 gnome-software
+247879 hagenjd2  20   0  273064   5572   2616 S   0.0  0.0   0:00.00 gsd-disk-utilit
+247881 hagenjd2  39  19  632512  10596   7468 S   0.0  0.0   0:00.05 tracker-miner-a
+247882 hagenjd2  39  19  649192  13684   8216 S   0.0  0.0   0:00.10 tracker-miner-f
+247888 hagenjd2  20   0  889792  29208  18152 S   0.0  0.0   0:04.89 nautilus-deskto
+247891 hagenjd2  39  19  562016   9896   7128 S   0.0  0.0   0:00.04 tracker-miner-u
+247898 hagenjd2  20   0  187396   4888   2316 S   0.0  0.0   0:00.07 dconf-service
+247910 hagenjd2  20   0  530252  16812  10856 S   0.0  0.0   0:00.11 abrt-applet
+247914 hagenjd2  39  19  660768  13068   7692 S   0.0  0.0   0:00.06 tracker-extract
+247918 hagenjd2  20   0  309868   9580   7140 S   0.0  0.0   0:00.03 seapplet
+247919 hagenjd2  20   0  590424  12232   6000 S   0.0  0.0   0:00.17 tracker-store
+247921 hagenjd2  20   0  538764   4880   3480 S   0.0  0.0   0:03.75 gvfsd-trash
+247927 hagenjd2  20   0  916708  16264  12084 S   0.0  0.0   0:00.05 evolution-calen
+247996 hagenjd2  20   0 1200648  18260  11976 S   0.0  0.0   0:00.25 evolution-calen
+248042 hagenjd2  20   0  903428  15716  11620 S   0.0  0.0   0:00.07 evolution-addre
+248056 hagenjd2  20   0 1185788  17260  12944 S   0.0  0.0   0:00.13 evolution-addre
+248076 hagenjd2  20   0  302300   3436   2852 S   0.0  0.0   0:01.21 ibus-engine-sim
+248097 hagenjd2  20   0  462360   3872   3032 S   0.0  0.0   0:00.03 gvfsd-burn
+248514 hagenjd2  20   0  720628  25524  14732 S   0.0  0.0   0:06.08 gnome-terminal-
+248539 hagenjd2  20   0    8536    728    600 S   0.0  0.0   0:00.01 gnome-pty-helpe
+248541 hagenjd2  20   0  116864   3404   1684 S   0.0  0.0   0:00.28 bash
+249031 root      20   0  186228   6116   4516 S   0.0  0.0   0:01.06 sshd
+249035 root      20   0  186228   5948   4348 S   0.0  0.0   0:00.54 sshd
+249068 brudzimr  20   0  186668   3248   1344 S   0.0  0.0   0:01.72 sshd
+249142 brudzimr  20   0  186228   2632   1032 S   0.0  0.0   0:00.23 sshd
+249143 brudzimr  20   0   72288   2692   1952 S   0.0  0.0   0:00.03 sftp-server
+249170 brudzimr  20   0  116760   3064   1476 S   0.0  0.0   0:00.10 bash
+249231 brudzimr  20   0  119764   2180   1356 S   0.0  0.0   0:00.45 tcsh
+252048 hassanm5  20   0  453244   5460   3360 S   0.0  0.0   4:02.79 ibus-daemon
+252947 brudzimr  20   0  155236   6856   3160 S   0.0  0.0   0:14.23 lynx
+252948 brudzimr  20   0   89808   3968   2968 S   0.0  0.0   0:00.13 sendmail
+252949 brudzimr  20   0   89780   3964   2968 S   0.0  0.0   0:00.08 postdrop
+253009 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/13:0H
+253059 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/13:1
+253344 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/1:2
+253572 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/22:0
+253866 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/21:2
+253867 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/14:1
