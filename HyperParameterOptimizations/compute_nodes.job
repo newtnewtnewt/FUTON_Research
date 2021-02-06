@@ -1,0 +1,12 @@
+#!/bin/bash -l
+#PBS -N calculate_nodes
+#PBS -l nodes=1:ppn=24
+#PBS -l walltime=144:00:00
+#PBS -q batch
+#PBS -m abe
+#PBS -j oe
+#Comment - batch job setup complete
+cd /home/dunnnm2/thesis_research/final_optimization_runs
+module load anaconda-python3
+source /software/python/anaconda3/etc/profile.d/conda.sh
+python final_diagnostic_model.py
